@@ -1,0 +1,164 @@
+// dropdown 1
+.dropdown-menu.show {
+	@media only screen and (max-width: $tab-land) {
+		position: fixed !important;
+		// top: 0 !important;
+		// left: 0 !important;
+
+		// bottom: 64px !important;
+		// left: 0 !important;
+		width: 95vw !important;
+		height: 100vh !important;
+		transform: translate(0) !important;
+		overflow: hidden;
+	}
+}
+// dropdown 2 calender
+
+.wrapper {
+	margin: 0 auto;
+
+	.btn-1 {
+		justify-content: center;
+
+		.btn {
+			padding: 0.5rem 1.5rem !important;
+			background-color: #f1f1f1 !important;
+			color: $color-black !important;
+		}
+	}
+
+	.btn-2 {
+		padding: 0 !important;
+		.btn {
+			padding: 0.5rem 1.5rem !important;
+		}
+	}
+
+	.container-calendar {
+		background: #ffffff;
+		padding: 15px;
+		max-width: 475px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+
+	.button-container-calendar button {
+		cursor: pointer;
+		display: inline-block;
+		zoom: 2;
+		background: $color-black;
+		color: #fff;
+		border: 1px solid $color-black;
+		border-radius: 50%;
+		padding: 0px 6px;
+	}
+
+	.table-calendar {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	.table-calendar td,
+	.table-calendar th {
+		padding: 5px;
+		// border: 1px solid #e2e2e2;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.date-picker.selected {
+		font-weight: bold;
+		outline: 1px dashed #00bcd4;
+	}
+
+	.date-picker.selected span {
+		border-bottom: 2px solid currentColor;
+	}
+
+	/* sunday */
+	.date-picker:nth-child(1) {
+		color: red;
+	}
+
+	/* friday */
+	.date-picker:nth-child(6) {
+		color: green;
+	}
+
+	#monthAndYear {
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.button-container-calendar {
+		position: relative;
+		margin-bottom: 1em;
+		overflow: hidden;
+		clear: both;
+	}
+
+	#previous {
+		float: left;
+	}
+
+	#next {
+		float: right;
+	}
+
+	.footer-container-calendar {
+		margin-top: 1em;
+		border-top: 1px solid #dadada;
+		padding: 10px 0;
+		display: none;
+	}
+
+	.footer-container-calendar select {
+		cursor: pointer;
+		display: inline-block;
+		zoom: 1;
+		background: #ffffff;
+		color: #585858;
+		border: 1px solid #bfc5c5;
+		border-radius: 3px;
+		padding: 5px 1em;
+	}
+}
+
+// dropdown 1
+.calc {
+	h5,
+	h4 {
+		color: $color-black;
+	}
+	&__list {
+		gap: 1rem;
+	}
+	&__item {
+		h4 {
+		}
+	}
+	&__right {
+		gap: 1rem;
+		button,
+		div {
+			font-size: 2rem;
+		}
+
+		button {
+			background-color: transparent;
+			padding: 0;
+			border: none;
+			outline: none;
+			font-size: 3rem;
+			background-color: $color-black;
+			height: 3.5rem;
+			width: 3.5rem;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $color-white;
+		}
+	}
+}

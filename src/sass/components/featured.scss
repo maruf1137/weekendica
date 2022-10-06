@@ -1,0 +1,125 @@
+.featured-section {
+	h2,
+	p {
+		color: $color-black;
+	}
+}
+
+.featured {
+	@media only screen and (max-width: $tab-land) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow: scroll;
+	}
+
+	&__item {
+		height: 23rem;
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		padding: 2rem;
+		border-radius: 1rem;
+		transition: all 0.3s;
+		text-decoration: none;
+
+		&:hover {
+			transform: translateY(-6px);
+			box-shadow: -10px 10px 25px 0 rgb(0 0 0 / 30%);
+		}
+
+		@media only screen and (max-width: $tab-land) {
+			height: 60rem;
+		}
+	}
+
+	&__item--1 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-1.jpg');
+	}
+	&__item--2 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-2.jpg');
+	}
+	&__item--3 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-3.jpg');
+	}
+	&__item--4 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-4.jpg');
+	}
+	&__item--5 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-5.jpg');
+	}
+	&__item--6 {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0.08),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.4),
+				rgba(0, 0, 0, 0.7)
+			),
+			url('../img/featured-img-6.jpg');
+	}
+}
+
+.featured-2-section {
+	.featured-laptop {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+
+		@media only screen and (max-width: $tab-land) {
+			display: none;
+		}
+
+		.featured__item--1 {
+			grid-row: 1/3;
+			grid-column: 1/3;
+			height: 100%;
+		}
+	}
+}

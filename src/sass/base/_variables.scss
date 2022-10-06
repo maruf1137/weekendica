@@ -1,0 +1,31 @@
+// ==============================
+// Colors
+// ==============================
+$color-primary: #f95355;
+$color-secondary: #fd8a52;
+$color-bg-dark: #54595f;
+$color-text: #7a7a7a;
+$color-black: #000;
+$color-white: #fff;
+//  --e-global-color-primary: #6EC1E4;
+//  --e-global-color-secondary: #54595F;
+//  --e-global-color-text: #7A7A7A;
+//  --e-global-color-accent: #61CE70;
+// =============================================
+// Fonts
+// =============================================
+$font-primary: 'Jost', sans-serif;
+// $font-secondary: 'Avenir LT Std', sans-serif;
+// $font-roboto: 'Roboto', sans-serif;
+
+// ============================================
+// Breakpoints
+// ============================================
+
+$laptop-land: 75em; //1200px / 16px = 75em
+$laptop-port: 64em; //1024px / 16px = 64em
+$tab-land: 62em; //992px / 16px = 62em
+$tab-port: 48em; //768px / 16px = 48em
+$mbl-land: 35.9375em; //575px / 16px = 35.9375em
+$mbl-port: 30em; //480px / 16px = 30em
+$mbl-small: 23.75em; //380px / 16px = 23.75em

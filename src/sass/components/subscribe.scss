@@ -1,0 +1,85 @@
+.subscribe-section {
+	background-color: #f5f5f5;
+
+	h2,
+	p {
+		color: $color-black;
+	}
+
+	.form {
+		background-color: $color-white;
+		border-radius: 10rem;
+		padding: 0.8rem 2rem;
+		max-width: 80rem;
+		width: 100%;
+		margin: 0 auto;
+
+		label {
+			i {
+				font-size: 2rem;
+			}
+		}
+
+		input {
+			width: 100%;
+			padding: 1.5rem;
+			border: none;
+			outline: none;
+		}
+
+		.btn-submit {
+			background-color: transparent;
+			border: none;
+			outline: none;
+
+			i {
+				font-size: 4rem;
+				font-weight: 900;
+			}
+		}
+	}
+
+	.text-1 {
+		opacity: 0.6;
+	}
+	.text-2 {
+		font-weight: 600;
+	}
+
+	.social__list {
+		gap: 2rem;
+	}
+	.social__item {
+		height: 3.5rem;
+		width: 3.5rem;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $color-black;
+		}
+	}
+	.social__link {
+		text-decoration: none;
+
+		i {
+			color: $color-white;
+		}
+	}
+
+	.facebook {
+		background-color: #2d5f9a;
+	}
+	.twitter {
+		background-color: #00c3f3;
+	}
+	.youtube {
+		background-color: #db4437;
+	}
+	.instagram {
+		background-color: #405de6;
+	}
+}

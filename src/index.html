@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weekendica | Iznajmljivanje vikendica, vila, kuća i splavova</title>
+
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+		<!-- cdn links -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/df45955d7c.js" crossorigin="anonymous"></script>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+		<!-- css links -->
+
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main class="main">
+			<!-- mbl nav start -->
+			<div class="mblNav d-flex d-xl-none">
+				<div class="mblNav__list d-flex justify-content-center align-items-center">
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link">
+							<svg class="icon">
+								<path
+									d="M9.984 20.016h-4.969v-8.016h-3l9.984-9 9.984 9h-3v8.016h-4.969v-6h-4.031v6z"
+								></path>
+							</svg>
+							<span class="text">Početna</span>
+						</a>
+					</div>
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link">
+							<svg class="icon">
+								<path
+									d="M9.516 14.016q1.875 0 3.188-1.313t1.313-3.188-1.313-3.188-3.188-1.313-3.188 1.313-1.313 3.188 1.313 3.188 3.188 1.313zM15.516 14.016l4.969 4.969-1.5 1.5-4.969-4.969v-0.797l-0.281-0.281q-1.781 1.547-4.219 1.547-2.719 0-4.617-1.875t-1.898-4.594 1.898-4.617 4.617-1.898 4.594 1.898 1.875 4.617q0 0.984-0.469 2.227t-1.078 1.992l0.281 0.281h0.797z"
+								></path>
+							</svg>
+							<span class="text">Istraži</span>
+						</a>
+					</div>
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link">
+							<svg class="icon">
+								<path
+									d="M11.016 9v-2.016h1.969v2.016h-1.969zM12 20.016q3.281 0 5.648-2.367t2.367-5.648-2.367-5.648-5.648-2.367-5.648 2.367-2.367 5.648 2.367 5.648 5.648 2.367zM12 2.016q4.125 0 7.055 2.93t2.93 7.055-2.93 7.055-7.055 2.93-7.055-2.93-2.93-7.055 2.93-7.055 7.055-2.93zM11.016 17.016v-6h1.969v6h-1.969z"
+								></path>
+							</svg>
+							<span class="text">Kako sve funkcioniše </span>
+						</a>
+					</div>
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link">
+							<svg class="icon">
+								<path
+									d="M5 13h6v6c0 0.552 0.448 1 1 1s1-0.448 1-1v-6h6c0.552 0 1-0.448 1-1s-0.448-1-1-1h-6v-6c0-0.552-0.448-1-1-1s-1 0.448-1 1v6h-6c-0.552 0-1 0.448-1 1s0.448 1 1 1z"
+								></path>
+							</svg>
+							<span class="text">Ugostite preko nas</span>
+						</a>
+					</div>
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link">
+							<svg class="icon">
+								<path
+									d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016h-16.031v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172t-1.172-2.813 1.172-2.836 2.813-1.195 2.813 1.195 1.172 2.836-1.172 2.813-2.813 1.172z"
+								></path>
+							</svg>
+							<span class="text">Prijava</span>
+						</a>
+					</div>
+					<div class="mblNav__item">
+						<a href="#" class="mblNav__link btn-open">
+							<svg class="icon">
+								<path
+									d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"
+								></path>
+							</svg>
+							<span class="text">Menu</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- mbl nav end -->
+			<!-- header section start -->
+			<header class="header">
+				<!-- navbar start -->
+				<nav class="nav container d-xl-flex justify-content-between align-items-center d-block">
+					<div class="nav__list d-flex align-items-center d-none d-xl-flex">
+						<div class="nav__item dropdown">
+							<a href="#" class="nav__link dropdown__btn d-flex align-items-center">
+								<span class="text">Vikendice</span>
+								<i class="bi bi-chevron-down"></i>
+							</a>
+							<div class="dropdown__content d-flex flex-column">
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+								<a href="#" class="dropdown__link">Vikendice okolina Beograda</a>
+							</div>
+						</div>
+						<div class="nav__item">
+							<a href="#" class="nav__link">Kako sve funkcioniše</a>
+						</div>
+						<div class="nav__item">
+							<a href="#" class="nav__link">Drugi o nama</a>
+						</div>
+
+						<button class="btn-close d-flex justify-content-end d-xl-none">
+							<!-- <i class="bi bi-x"></i> -->
+						</button>
+					</div>
+					<figure class="nav__logo">
+						<a href="index.html" class="logo">
+							<img src="img/logo.svg" alt="logo" />
+						</a>
+					</figure>
+					<div class="nav__btns d-xl-flex align-items-center d-none">
+						<button class="btn btn__nav btn__nav--1">
+							<span class="avatar">
+								<i class="bi bi-person-fill"></i>
+							</span>
+							<span class="text">Prijava</span>
+						</button>
+						<button class="btn btn__nav btn__nav--2">
+							<span class="text">Ugostite preko nas</span>
+						</button>
+					</div>
+				</nav>
+				<!-- navbar end -->
+
+				<div class="container">
+					<div class="header__content center">
+						<h1 class="heading mb-2">Iznajmite vikendicu iz snova.</h1>
+						<p class="text mb-4">
+							Naša misija je pronalaženje najboljih vila, vikendica, kuća i splavova za
+							iznajmljivanje, za vaš savršeni odmor, okupljanje ili događaj van grada.
+						</p>
+
+						<div class="header__search search">
+							<form
+								action="#"
+								class="search__form d-flex justify-content-between align-items-center"
+							>
+								<!-- dropdoen 1 -->
+								<div class="dropdown show">
+									<a
+										class="btn btn-secondary dropdown-toggle"
+										href="#"
+										role="button"
+										id="dropdownMenuLink"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										<span class="text">Izaberite odliku lokacije</span>
+										<i class="bi bi-chevron-down"></i>
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<div class="dropdown-content">
+											<a class="dropdown-item" href="#">Blizu gradskog prevoza</a>
+											<a class="dropdown-item" href="#">Do 10km od centra grada</a>
+											<a class="dropdown-item" href="#">Do 30km od centra grada</a>
+											<a class="dropdown-item" href="#">Do 50km od centra grada</a>
+											<div class="d-flex gap-1">
+												<a class="dropdown-item" href="#">Na planini</a>
+												<a class="dropdown-item" href="#">Pored vode</a>
+											</div>
+											<div class="d-flex gap-1">
+												<a class="dropdown-item" href="#">Sa pogledom</a>
+												<a class="dropdown-item" href="#">U šumi</a>
+											</div>
+										</div>
+										<div class="dropdown-btn">
+											<button class="btn btn-dropdown">Zatvori</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- dropdoen 2 calender -->
+								<div class="dropdown show">
+									<a
+										class="btn btn-secondary dropdown-toggle"
+										href="#"
+										role="button"
+										id="dropdownMenuLink"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										<span class="text">06-10-2022</span>
+										<i class="bi bi-chevron-down"></i>
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<div class="wrapper">
+											<div class="container-calendar">
+												<div
+													class="button-container-calendar d-flex justify-content-between align-items-center"
+												>
+													<button id="previous" onclick="previous()">&#8249;</button>
+													<h3 id="monthAndYear"></h3>
+													<button id="next" onclick="next()">&#8250;</button>
+												</div>
+
+												<table class="table-calendar" id="calendar" data-lang="en">
+													<thead id="thead-month"></thead>
+													<tbody id="calendar-body"></tbody>
+												</table>
+
+												<div class="dropdown-btn btn-1">
+													<button class="btn btn-dropdown">Zatvori</button>
+												</div>
+												<hr />
+												<div class="dropdown-btn btn-2">
+													<button class="btn btn-dropdown">Zatvori</button>
+												</div>
+
+												<div class="footer-container-calendar">
+													<label for="month">Jump To: </label>
+													<select id="month" onchange="jump()">
+														<option value="0">Jan</option>
+														<option value="1">Feb</option>
+														<option value="2">Mar</option>
+														<option value="3">Apr</option>
+														<option value="4">May</option>
+														<option value="5">Jun</option>
+														<option value="6">Jul</option>
+														<option value="7">Aug</option>
+														<option value="8">Sep</option>
+														<option value="9">Oct</option>
+														<option value="10">Nov</option>
+														<option value="11">Dec</option>
+													</select>
+													<select id="year" onchange="jump()"></select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- dropdoen 3 calc -->
+								<div class="dropdown calc show">
+									<a
+										class="btn btn-secondary dropdown-toggle"
+										href="#"
+										role="button"
+										id="dropdownMenuLink"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										<span class="text">Dropdown link</span>
+										<i class="bi bi-chevron-down"></i>
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<div class="dropdown-content">
+											<h5 class="heading mb-1">Izaberite goste</h5>
+											<ul class="calc__list d-flex flex-column">
+												<li class="calc__item d-flex justify-content-between align-items-center">
+													<h4 class="heading">Odrasli</h4>
+													<div class="calc__right d-flex align-items-center">
+														<button class="minus"><i class="bi bi-dash"></i></button>
+														<div class="number">0</div>
+														<button class="minus"><i class="bi bi-plus"></i></button>
+													</div>
+												</li>
+												<li class="calc__item d-flex justify-content-between align-items-center">
+													<h4 class="heading">Odrasli</h4>
+													<div class="calc__right d-flex align-items-center">
+														<button class="minus"><i class="bi bi-dash"></i></button>
+														<div class="number">0</div>
+														<button class="minus"><i class="bi bi-plus"></i></button>
+													</div>
+												</li>
+												<li class="calc__item d-flex justify-content-between align-items-center">
+													<h4 class="heading">Odrasli</h4>
+													<div class="calc__right d-flex align-items-center">
+														<button class="minus"><i class="bi bi-dash"></i></button>
+														<div class="number">0</div>
+														<button class="minus"><i class="bi bi-plus"></i></button>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown-btn flex-column">
+											<p class="text text-black mb-1">
+												Izaberite broj gostiju, dojenčad se ne računa u broj gostiju.
+											</p>
+											<button class="btn btn-dropdown ml-auto">Zatvori</button>
+										</div>
+									</div>
+								</div>
+
+								<input
+									type="text"
+									name="post_title"
+									value=""
+									placeholder="Ime objekta (opciono)"
+									class="search__input"
+								/>
+
+								<button class="btn btn__submit" type="submit">
+									<i class="bi bi-search"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- header section end -->
+			<!-- featured section start -->
+			<section class="section featured-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading mb-2">Istaknute destinacije</h2>
+						<p class="text">Savršeni odmor je moguć samo van gradske vreve.</p>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="featured row gy-5">
+						<div class="col-lg-6">
+							<a href="3" class="featured__item featured__item--1">
+								<h3 class="heading mb-1">Okolina Beograda</h3>
+								<p class="text">Pronađite najbolje vikendice u okolini Beograda.</p>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--2">
+								<h3 class="heading">Na sat od Beograda</h3>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--3">
+								<h3 class="heading">Kopaonik</h3>
+							</a>
+						</div>
+
+						<div class="col-lg-6">
+							<a href="3" class="featured__item featured__item--4">
+								<h3 class="heading mb-1">Fruška Gora</h3>
+								<p class="text">Pronađite vikendicu na Fruškoj Gori</p>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--5">
+								<h3 class="heading">Palić</h3>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--6">
+								<h3 class="heading">Tara</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--featured section  end -->
+
+			<!-- offer section start -->
+			<section class="section offer-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading mb-2">Ponuda vikendica, vila, kuća i splavova</h2>
+						<p class="text">Svaki smeštaj koji preporučujemo lično proveravamo</p>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="offer row g-5 mb-3">
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4">
+							<div class="offer__item">
+								<div class="swiper mb-1">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+										<div class="swiper-slide">
+											<figure class="offer__img">
+												<img src="img/offer-img-1.jpg" alt="" />
+											</figure>
+										</div>
+									</div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon">
+											<use xlink:href="img/icons.svg#icon-chevron-right"></use>
+										</svg>
+									</div>
+
+									<div class="offer__nav d-flex justify-content-between align-items-center">
+										<button class="btn btn__promote btn-1">Promovisano</button>
+										<button class="btn btn__wishlist btn-2">
+											<i class="bi bi-heart"></i>
+										</button>
+									</div>
+								</div>
+								<h5 class="heading mb-2 d-flex align-items-center">
+									<i class="bi bi-check-circle-fill mr-1"></i>
+									<span> Solea – Luxury Concept </span>
+								</h5>
+								<p class="text pb-2">
+									Solea - Luxury Concept je nesvakidašnji kompleks koji zauzima vrhunac ponude za…
+								</p>
+								<hr />
+								<ul class="offer__list d-flex align-items-center mb-2">
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-people-fill mr-1"></i>
+										<span class="text">100</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M4 16h27c0.547 0 1 0.453 1 1v7h-4v-4h-24v4h-4v-19c0-0.547 0.453-1 1-1h2c0.547 0 1 0.453 1 1v11zM13 11c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM32 15v-1c0-3.313-2.688-6-6-6h-11c-0.547 0-1 0.453-1 1v6h18z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<svg class="icon mr-1">
+											<path
+												d="M26 17v3c0 1.781-0.781 3.359-2 4.469v3.031c0 0.281-0.219 0.5-0.5 0.5h-1c-0.281 0-0.5-0.219-0.5-0.5v-1.844c-0.625 0.219-1.297 0.344-2 0.344h-12c-0.703 0-1.375-0.125-2-0.344v1.719c0 0.344-0.219 0.625-0.5 0.625h-1c-0.281 0-0.5-0.281-0.5-0.625v-2.906c-1.219-1.109-2-2.688-2-4.469v-3h24zM11 10.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 9.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 8.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM11 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM28 14.5v1c0 0.281-0.219 0.5-0.5 0.5h-27c-0.281 0-0.5-0.219-0.5-0.5v-1c0-0.281 0.219-0.5 0.5-0.5h1.5v-10c0-2.203 1.797-4 4-4 1.125 0 2.141 0.469 2.875 1.219 0.969-0.391 2.125-0.25 2.984 0.422l0.344-0.344c0.094-0.094 0.25-0.094 0.344 0l0.656 0.656c0.094 0.094 0.094 0.25 0 0.344l-4.906 4.906c-0.094 0.094-0.25 0.094-0.344 0l-0.656-0.656c-0.094-0.094-0.094-0.25 0-0.344l0.344-0.344c-0.75-0.953-0.844-2.266-0.266-3.313-0.359-0.344-0.844-0.547-1.375-0.547-1.109 0-2 0.891-2 2v10h23.5c0.281 0 0.5 0.219 0.5 0.5zM14 7.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM12 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 6.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM14 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM13 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM16 5.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM15 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5zM17 4.5c0 0.281-0.219 0.5-0.5 0.5s-0.5-0.219-0.5-0.5 0.219-0.5 0.5-0.5 0.5 0.219 0.5 0.5z"
+											></path>
+										</svg>
+										<span class="text">1</span>
+									</li>
+									<li class="offer__box d-flex align-items-center">
+										<i class="bi bi-geo-alt-fill mr-1"></i>
+										<span class="text"> Барајево, Србија </span>
+									</li>
+								</ul>
+
+								<div class="offer__price">400.00€</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-center align-items-center">
+						<button class="btn btn__all center">Pogledajte sve ponude</button>
+					</div>
+				</div>
+			</section>
+			<!--offer section  end -->
+
+			<!-- about section start -->
+			<section class="section about-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading mb-2">Saznajte više o nama</h2>
+						<p class="text">Kako funkcionišemo i šta nudimo</p>
+					</div>
+				</div>
+
+				<div class="container mb-5">
+					<div class="about row g-5">
+						<div class="col-12 col-lg-6">
+							<div class="about__item center">
+								<a href="#">
+									<img src="img/hiking-icon.png" class="mb-2" alt="" />
+									<h4 class="heading mb-2">Tražite vikendicu?</h4>
+									<p class="text mb-2"><strong>Pronađi i rezerviši lako.</strong></p>
+									<p class="text mb-2">
+										Prođite sa nama potrebne korake rezervacije i odaberite Vama idealnu vikendicu
+										bez muke. Rezervišite idealnu vikendicu za odmor, proslavu ili posao.
+									</p>
+									<button class="btn btn__about">Kako sve funkcioniše</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="about__item center">
+								<a href="#">
+									<img src="img/home.png" class="mb-2" alt="" />
+									<h4 class="heading mb-2">Tražite vikendicu?</h4>
+									<p class="text mb-2"><strong>Pronađi i rezerviši lako.</strong></p>
+									<p class="text mb-2">
+										Prođite sa nama potrebne korake rezervacije i odaberite Vama idealnu vikendicu
+										bez muke. Rezervišite idealnu vikendicu za odmor, proslavu ili posao.
+									</p>
+									<button class="btn btn__about">Kako sve funkcioniše</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="heading mb-2 center">
+						<h2 class="heading">Naša vizija?</h2>
+					</div>
+
+					<ul class="vision d-flex flex-column justify-content-center align-items-center">
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Najbolje vikendice, vile, kuće i splavovi na jednom mestu</span>
+						</li>
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Lako pronalaženje idealnog objekta</span>
+						</li>
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Personalizovan rezervacioni sistem</span>
+						</li>
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Najbolji odnos cene i kvaliteta</span>
+						</li>
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Promocija i pomoć u razvoju individualnih smeštaja</span>
+						</li>
+						<li class="vision__item d-flex align-items-center">
+							<i class="bi bi-check-lg mr-1"></i>
+							<span class="text">Maksimalno zadovoljstvo i domaćina i gosta</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- about section end -->
+
+			<!-- featured categories section start -->
+			<section class="section featured-2-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading mb-2">Istaknute kategorije</h2>
+						<p class="text">Istražite objekte po nekim specifičnostima</p>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="featured featured-laptop">
+						<a href="3" class="featured__item featured__item--1">
+							<h3 class="heading mb-1">Okolina Beograda</h3>
+							<p class="text">Pronađite najbolje vikendice u okolini Beograda.</p>
+						</a>
+
+						<a href="3" class="featured__item featured__item--2">
+							<h3 class="heading">Na sat od Beograda</h3>
+						</a>
+
+						<a href="3" class="featured__item featured__item--3">
+							<h3 class="heading">Kopaonik</h3>
+						</a>
+
+						<a href="3" class="featured__item featured__item--4">
+							<h3 class="heading">Palić</h3>
+						</a>
+
+						<a href="3" class="featured__item featured__item--5">
+							<h3 class="heading">Palić</h3>
+						</a>
+					</div>
+
+					<div class="featured featured-mbl row gy-5 d-flex d-lg-none">
+						<div class="col-lg-6">
+							<a href="3" class="featured__item featured__item--1">
+								<h3 class="heading mb-1">Okolina Beograda</h3>
+								<p class="text">Pronađite najbolje vikendice u okolini Beograda.</p>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--2">
+								<h3 class="heading">Na sat od Beograda</h3>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--3">
+								<h3 class="heading">Kopaonik</h3>
+							</a>
+						</div>
+
+						<div class="col-lg-6">
+							<a href="3" class="featured__item featured__item--4">
+								<h3 class="heading mb-1">Fruška Gora</h3>
+								<p class="text">Pronađite vikendicu na Fruškoj Gori</p>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--5">
+								<h3 class="heading">Palić</h3>
+							</a>
+						</div>
+						<div class="col-lg-3">
+							<a href="3" class="featured__item featured__item--6">
+								<h3 class="heading">Tara</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- featured categories section end -->
+
+			<!-- inspiration section end -->
+			<section class="section inspiration-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading mb-2">Inspiracija</h2>
+						<p class="text">Članci i saveti</p>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="inspiration row g-5">
+						<div class="col-12 col-md-6 col-lg-4">
+							<a href="#">
+								<div class="inspiration__item">
+									<figure class="inspiration__img">
+										<img src="img/inspiration-img-1.jpg" alt="" />
+									</figure>
+									<div class="inspiration__desc desc">
+										<h4 class="heading inspiration__title">
+											Želite proslavu u velikom stilu? Vikendice za proslave i dogadjaje mogu biti
+											idealno rešenje za Vas!
+										</h4>
+										<hr />
+										<div class="desc__top mb-2 d-flex justify-content-between align-items-center">
+											<button class="btn btn-cotages">Vikendice</button>
+											<div class="dates d-flex align-items-center">
+												<div class="date">27</div>
+												/
+												<div class="month">09</div>
+												/
+												<div class="year">2022</div>
+											</div>
+										</div>
+										<p class="text pb-2">
+											Weekendica Vam pruža mogucnost da samo u 3 klika rezervišete prostor za Vaš
+											predstojeći događaj.…
+										</p>
+										<hr />
+										<a href="#" class="btn-continue"> Nastavite sa čitanjem </a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<a href="#">
+								<div class="inspiration__item">
+									<figure class="inspiration__img">
+										<img src="img/inspiration-img-1.jpg" alt="" />
+									</figure>
+									<div class="inspiration__desc desc">
+										<h4 class="heading inspiration__title">
+											Želite proslavu u velikom stilu? Vikendice za proslave i dogadjaje mogu biti
+											idealno rešenje za Vas!
+										</h4>
+										<hr />
+										<div class="desc__top mb-2 d-flex justify-content-between align-items-center">
+											<button class="btn btn-cotages">Vikendice</button>
+											<div class="dates d-flex align-items-center">
+												<div class="date">27</div>
+												/
+												<div class="month">09</div>
+												/
+												<div class="year">2022</div>
+											</div>
+										</div>
+										<p class="text pb-2">
+											Weekendica Vam pruža mogucnost da samo u 3 klika rezervišete prostor za Vaš
+											predstojeći događaj.…
+										</p>
+										<hr />
+										<a href="#" class="btn-continue"> Nastavite sa čitanjem </a>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<a href="#">
+								<div class="inspiration__item">
+									<figure class="inspiration__img">
+										<img src="img/inspiration-img-1.jpg" alt="" />
+									</figure>
+									<div class="inspiration__desc desc">
+										<h4 class="heading inspiration__title">
+											Želite proslavu u velikom stilu? Vikendice za proslave i dogadjaje mogu biti
+											idealno rešenje za Vas!
+										</h4>
+										<hr />
+										<div class="desc__top mb-2 d-flex justify-content-between align-items-center">
+											<button class="btn btn-cotages">Vikendice</button>
+											<div class="dates d-flex align-items-center">
+												<div class="date">27</div>
+												/
+												<div class="month">09</div>
+												/
+												<div class="year">2022</div>
+											</div>
+										</div>
+										<p class="text pb-2">
+											Weekendica Vam pruža mogucnost da samo u 3 klika rezervišete prostor za Vaš
+											predstojeći događaj.…
+										</p>
+										<hr />
+										<a href="#" class="btn-continue"> Nastavite sa čitanjem </a>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- inspiration section end -->
+			<!-- subscribe section start -->
+			<section class="section subscribe-section">
+				<div class="container">
+					<div class="heading mb-5 center">
+						<h2 class="heading">
+							Najbolje ponude i akcije <br />
+							direktno u vaše email sanduče
+						</h2>
+					</div>
+					<form action="#" class="form mb-2 d-flex justify-content-between align-items-center">
+						<label for="subscribe-input">
+							<i class="bi bi-send-fill"></i>
+						</label>
+						<input
+							type="text"
+							id="subscribe-input"
+							placeholder="Upišite vaš email ..."
+							class="subscribe__input"
+						/>
+						<button class="btn-submit"><i class="bi bi-arrow-right-short"></i></button>
+					</form>
+					<p class="text text-1 mb-2 center">
+						Bez brige, mi ne spamujemo. Šaljemo newsletter samo kada zaista imamo nešto bitno da vam
+						javimo.
+					</p>
+					<p class="text text-2 mb-2 center">Budimo u kontaktu, zapratite nas</p>
+					<ul class="social__list d-flex justify-content-center align-items-center">
+						<li class="social__item facebook">
+							<a href="#" class="social__link"><i class="bi bi-facebook"></i></a>
+						</li>
+						<li class="social__item twitter">
+							<a href="#" class="social__link"><i class="bi bi-twitter"></i></a>
+						</li>
+						<li class="social__item youtube">
+							<a href="#" class="social__link"><i class="bi bi-youtube"></i></a>
+						</li>
+						<li class="social__item instagram">
+							<a href="#" class="social__link"><i class="bi bi-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- subscribe section end -->
+
+			<!-- footer start -->
+			<footer class="section footer">
+				<div class="container mb-5">
+					<div class="footer__list row g-5">
+						<div class="col-12 col-md-6 col-lg-3">
+							<div class="item footer__item footer__item--1">
+								<h5 class="heading">Istaknute kategorije</h5>
+								<ul class="item__list">
+									<li>
+										<a href="#" class="item__link">Beograd i okolina</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Na sat od Beograda</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice na Fruškoj Gori</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice Palić</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice na Kopaoniku</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice na Tari</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Luksuzne vikendice</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice sa bazenom</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice za okupljanja</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Vikendice za proslave i događaje</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Splavovi za iznajmljivanje</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Pet-friendly vikendice</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3">
+							<div class="item footer__item footer__item--2">
+								<h5 class="heading">Najnovije vikendice</h5>
+								<ul class="item__list">
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3">
+							<div class="item footer__item footer__item--2">
+								<h5 class="heading">Najnovije vikendice</h5>
+								<ul class="item__list">
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="item__link item__link-img d-flex align-content-stretch">
+											<figure class="item__img">
+												<img src="img/footer-item2-img-1.jpg" alt="" />
+											</figure>
+											<div class="item__details">
+												<p class="text item__name">name</p>
+												<p class="text item__location">location</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-3">
+							<div class="item footer__item footer__item--4">
+								<h5 class="heading">Istaknute stranice</h5>
+								<ul class="item__list">
+									<li>
+										<a href="#" class="item__link">Pretraga vikendica</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Kako sve funkcioniše</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Ugostite preko nas</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Inspiracija i saveti</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Drugi o nama</a>
+									</li>
+									<li>
+										<a href="#" class="item__link">Moj nalog</a>
+									</li>
+									<li>
+										<a href="#" class="item__link d-flex align-items-center gap-1">
+											<span class="text">Karijera</span>
+											<span class="dot-anim"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="copyright-section">
+				<div class="container">
+					<div class="copyright d-flex justify-content-between align-items-center">
+						<p class="text">Copyright © 2022 Weekendica.</p>
+						<ul class="copyright__list d-flex align-items-center">
+							<li>
+								<a href="#" class="copyright__link">Polisa privatnosti</a>
+							</li>
+							<li>
+								<a href="#" class="copyright__link">Uslovi korišćenja</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- footer end -->
+		</main>
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<script src="js/dropdown.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

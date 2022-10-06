@@ -1,0 +1,103 @@
+h1.heading {
+	font-size: 6.5rem;
+	font-weight: 700;
+	color: $color-white;
+	font-family: $font-primary;
+}
+h2.heading {
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: $color-white;
+
+	font-family: $font-primary;
+}
+
+h3.heading {
+	font-size: 2.6rem;
+	font-weight: 700;
+	color: $color-white;
+	font-family: $font-primary;
+}
+
+h4.heading {
+	font-size: 2rem;
+	font-weight: 700;
+	color: $color-white;
+
+	font-family: $font-primary;
+}
+
+h5.heading {
+	font-size: 1.5rem;
+	font-family: $font-primary;
+	font-weight: 900;
+	color: $color-white;
+}
+
+h6.heading {
+	font-size: 1.2rem;
+	font-family: $font-primary;
+	color: $color-white;
+}
+
+.text {
+	font-size: 1.6rem;
+	color: $color-white;
+
+	font-family: $font-primary;
+}
+
+// Typography utils
+
+.bold {
+	font-weight: 700;
+}
+
+.center {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+.icon {
+	height: 2.7rem;
+	width: 3.1rem;
+}
+
+.gap-1 {
+	gap: 1rem;
+}
+
+.color-black {
+	color: $color-black;
+}
+.color-primary {
+	color: $color-primary;
+}
+
+@mixin pos-center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin img-size {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin icon-vector {
+	height: 2rem;
+	width: 2rem;
+}

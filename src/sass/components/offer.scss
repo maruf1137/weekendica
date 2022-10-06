@@ -1,0 +1,106 @@
+.offer-section {
+	h2,
+	p {
+		color: $color-black;
+	}
+
+	.btn__all {
+		background-color: $color-primary;
+		color: $color-white;
+		transition: all 0.3s;
+		border: 1px solid $color-primary;
+
+		&:hover {
+			background-color: #f95356e2;
+			border: 1px solid #f95356e2;
+		}
+	}
+}
+
+.offer {
+	&__item {
+	}
+
+	h5 {
+		color: $color-black;
+
+		i {
+			color: $color-primary;
+		}
+	}
+
+	.text {
+		font-size: 1.4rem;
+		color: $color-black;
+		color: #222;
+		font-weight: 600;
+		opacity: 0.5;
+	}
+
+	.swiper {
+		border-radius: 1rem;
+	}
+
+	&__img {
+		max-height: 23rem;
+		height: 100%;
+		border-radius: 1rem;
+
+		img {
+			@include img-size;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&__nav {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 100%;
+		z-index: 4;
+		padding: 0 1rem;
+
+		.btn {
+			padding: 0 0.6rem;
+		}
+
+		.btn-1 {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+		.btn-2 {
+			border: none;
+			background-color: transparent;
+
+			i {
+				color: $color-white;
+			}
+		}
+	}
+
+	&__list {
+		gap: 2rem;
+	}
+	&__box {
+		i {
+			font-size: 1.4rem;
+			color: #222;
+			font-weight: 600;
+			opacity: 0.5;
+		}
+
+		.icon {
+			height: 1.4rem;
+			width: 1.4rem;
+			fill: #222;
+			opacity: 0.5;
+		}
+	}
+
+	&__price {
+		font-size: 1.6rem;
+		color: $color-primary;
+		font-weight: 600;
+	}
+}

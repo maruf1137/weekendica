@@ -1,0 +1,51 @@
+.btn {
+	padding: 1rem 3rem;
+	border: 2px solid $color-primary;
+	font-weight: 700;
+	color: $color-black;
+	border-radius: 10rem;
+	font-size: 1.6rem;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: $color-primary;
+		color: $color-white;
+		border: 2px solid $color-primary;
+	}
+
+	&__nav {
+		.text {
+			color: $color-white;
+		}
+	}
+	&__nav--1 {
+		border: none;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		.avatar {
+			width: 2.6rem;
+			height: 2.6rem;
+			border-radius: 50%;
+			background-color: $color-white;
+			@include flex-center;
+		}
+
+		&:hover {
+			background-color: transparent;
+			border: none;
+
+			.avatar {
+				color: $color-black;
+			}
+		}
+	}
+	&__nav--2 {
+		background-color: $color-primary;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

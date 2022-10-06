@@ -1,0 +1,78 @@
+.inspiration-section {
+	h2,
+	h4,
+	p {
+		color: $color-black;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.inspiration {
+	&__item {
+		border-radius: 1rem;
+		border: 1px solid #3333;
+		text-decoration: none;
+
+		&:hover {
+			.inspiration__title,
+			.btn-continue {
+				color: $color-primary !important;
+			}
+		}
+	}
+
+	&__img {
+		width: 100%;
+		max-height: 24rem;
+		height: 22rem;
+		border-radius: 1rem 1rem 0 0;
+
+		img {
+			@include img-size;
+			object-fit: cover;
+			border-radius: 1rem 1rem 0 0;
+		}
+	}
+
+	&__title {
+		padding: 1.5rem;
+		// font-size: 22px;
+		line-height: 140%;
+		transition: all 0.3s;
+	}
+
+	&__desc {
+	}
+
+	.desc {
+		padding: 1.5rem;
+
+		&__top {
+			.btn {
+				padding: 0.4rem 1rem;
+				background-color: $color-primary;
+				color: $color-white;
+			}
+
+			.dates {
+				color: $color-black;
+			}
+		}
+
+		.text {
+			font-size: 14px;
+			line-height: 180%;
+			color: #888;
+			text-align: justify;
+		}
+
+		.btn-continue {
+			text-decoration: none;
+			color: $color-black;
+			transition: all 0.3s;
+		}
+	}
+}
