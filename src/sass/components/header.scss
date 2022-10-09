@@ -87,6 +87,10 @@
 				}
 			}
 
+			.dropdown-content {
+				padding: 2rem;
+			}
+
 			&__list {
 				width: 100%;
 				background: white;
@@ -139,6 +143,16 @@
 					padding: 1rem 3rem;
 					border-radius: 10rem;
 				}
+			}
+		}
+
+		.show-dropdown {
+			.dropdown__list {
+				display: block;
+			}
+
+			.overlay {
+				display: block;
 			}
 		}
 

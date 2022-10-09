@@ -1397,6 +1397,9 @@ a:hover {
     padding: 1.5rem 2.5rem;
   }
 }
+.header .search .dropdown .dropdown-content {
+  padding: 2rem;
+}
 .header .search .dropdown__list {
   width: 100%;
   background: white;
@@ -1446,6 +1449,12 @@ a:hover {
   width: auto;
   padding: 1rem 3rem;
   border-radius: 10rem;
+}
+.header .search .show-dropdown .dropdown__list {
+  display: block;
+}
+.header .search .show-dropdown .overlay {
+  display: block;
 }
 .header .search .dropdown2 .dropdown__list {
   width: 45vw;

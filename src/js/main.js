@@ -99,11 +99,27 @@ closeSidebar.addEventListener('click', () => {
 });
 
 // dropdown
-const dropdownBtn = document.querySelectorAll('.dropdown__btn');
 const dropdown = document.querySelectorAll('.search .dropdown');
-const closeDropdownBtn = document.querySelector('.dropdown1 .btn-dropdown');
-const overlay = document.querySelectorAll('.overlay');
+// const dropdown1List = document.querySelector('.dropdown1 .dropdown__list');
+// const closeDropdownBtn = document.querySelector('.dropdown1 .btn-dropdown');
+const overlay1 = document.querySelector('.overlay-1');
 
-dropdown.forEach((dropdown) => {
-	// const btn = dropdown.querySelector();
+dropdown.forEach((drodown) => {
+	const btn = drodown.querySelector('.dropdown__btn');
+	const btnOverlay = drodown.querySelector('.overlay');
+
+	btn.addEventListener('click', () => {
+		dropdown.forEach(function (item) {
+			if (item !== drodown) {
+				item.classList.remove('show-dropdown');
+			}
+		});
+		drodown.classList.toggle('show-dropdown');
+	});
+
+	if (btnOverlay) {
+		btnOverlay.addEventListener('click', () => {
+			drodown.classList.toggle('show-dropdown');
+		});
+	}
 });
