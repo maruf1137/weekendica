@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>pools page</title>
+		<link rel="stylesheet" href="../css/about.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<link rel="stylesheet" href="../css/calender.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body class="ames-villas">
+		<!-- navbar -->
+		<nav class="nav d-flex justify-content-start align-items-end">
+			<div class="nav__logo-area">
+				<a
+					href="#"
+					class="nav__dielog-link mb-1 color-black text-decoration-underline d-none d-xl-block"
+					>An Awaze Company
+				</a>
+				<button class="btn-left-sidebar d-block d-xl-none">
+					<i class="bi bi-list"></i>
+				</button>
+				<figure class="nav__logo">
+					<a href="#" class="logo">
+						<img src="../images/logo-james.svg" alt="" />
+					</a>
+				</figure>
+			</div>
+			<div class="nav__link-wrapper">
+				<figure class="logo-abta mb-1 d-none d-xl-block">
+					<img src="../images/logo-abta-blue-v4.svg" alt="" class="logo" />
+				</figure>
+				<ul class="nav__list d-flex align-items-center">
+					<h4 class="heading d-xl-none color-black">menu</h4>
+					<button class="btn-close-left-sidebar d-xl-none color-black">
+						<i class="bi bi-x"></i>
+					</button>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Destinations
+							<i class="bi bi-chevron-right d-xl-none"></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Our Villas <i class="bi bi-chevron-right d-xl-none"></i
+						></a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Deals & Offers <i class="bi bi-chevron-right d-xl-none"></i
+						></a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Villa Holidays <i class="bi bi-chevron-right d-xl-none"></i
+						></a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Trust & Flexibility <i class="bi bi-chevron-right d-xl-none"></i
+						></a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>Help & Advice <i class="bi bi-chevron-right d-xl-none"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+			<div class="navTop d-none d-md-block">
+				<div class="navTop__list d-flex align-items-start">
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center selectpicker-dropdown">
+							<select class="selectpicker" data-width="fit">
+								<option data-content='<span class="flag-icon flag-icon-us"></span>'>
+									<!-- English -->
+								</option>
+								<option data-content='<span class="flag-icon flag-icon-mx"></span>'>
+									<!-- Español -->
+								</option>
+							</select>
+							<span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+						</a>
+					</div>
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center">
+							<span class="mr-1"><i class="bi bi-eye-fill"></i></span>
+							<span class="text color-black">Recent Searches </span>
+						</a>
+					</div>
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center">
+							<span class="mr-1"><i class="bi bi-heart-fill"></i></span>
+							<span class="text color-black">shortlist </span>
+						</a>
+					</div>
+					<div class="navTop__item navTop__dropdown">
+						<a href="#" class="navTop__link d-flex align-items-center">
+							<span class="mr-1"><i class="bi bi-person-fill"></i></span>
+							<span class="text color-black">login & signup</span>
+							<span class="ml-1 right-icon"><i class="bi bi-chevron-right"></i></span>
+						</a>
+						<div class="navTop__dropdown--list d-flex flex-column">
+							<a href="#" class="navTop__dropdown--link">login</a>
+							<a href="#" class="navTop__dropdown--link">signup</a>
+							<a href="#" class="navTop__dropdown--link">Manage My Booking</a>
+							<a href="#" class="navTop__dropdown--link">Travel Agent Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navTop d-md-none">
+				<button class="btn-open-rightSidebar d-md-none color-black">
+					<i class="bi bi-person"></i>
+				</button>
+				<div class="navTop__list d-flex align-items-start">
+					<button class="btn-close-right-sidebar d-md-none color-black">
+						<i class="bi bi-x"></i>
+					</button>
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center">
+							<span class="mr-1"><i class="bi bi-eye-fill"></i></span>
+							<span class="text color-black">Recent Searches </span>
+						</a>
+					</div>
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center">
+							<span class="mr-1"><i class="bi bi-heart-fill"></i></span>
+							<span class="text color-black">shortlist </span>
+						</a>
+					</div>
+					<div class="navTop__item navTop__dropdown">
+						<a href="#" class="navTop__link d-flex align-items-center btn-login">
+							<span class="mr-1"><i class="bi bi-person-fill"></i></span>
+							<span class="text color-black">login & signup</span>
+							<span class="ml-1 right-icon"><i class="bi bi-chevron-right"></i></span>
+						</a>
+						<div class="navTop__dropdown--list d-flex flex-column">
+							<a href="#" class="navTop__dropdown--link">login</a>
+							<a href="#" class="navTop__dropdown--link">signup</a>
+							<a href="#" class="navTop__dropdown--link">Manage My Booking</a>
+							<a href="#" class="navTop__dropdown--link">Travel Agent Login</a>
+						</div>
+					</div>
+					<div class="navTop__item">
+						<a href="#" class="navTop__link d-flex align-items-center selectpicker-dropdown">
+							<select class="selectpicker" data-width="fit">
+								<option data-content='<span class="flag-icon flag-icon-us"></span>'>
+									<!-- English -->
+								</option>
+								<option data-content='<span class="flag-icon flag-icon-mx"></span>'>
+									<!-- Español -->
+								</option>
+							</select>
+							<span class="right-icon"><i class="bi bi-chevron-right"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar -->
+		<!-- search box -->
+		<div class="search">
+			<div class="container">
+				<div class="search__wrapper">
+					<button class="btn-form d-lg-none">
+						<i class="bi bi-search"></i>
+						<span class="text d-lg-none">Find holidays</span>
+					</button>
+					<button class="btn-close-form d-lg-none">
+						<i class="bi bi-x"></i>
+					</button>
+					<form action="#" class="search__form">
+						<div class="search__loaction search__item search__dropdown">
+							<div class="d-flex align-items-center gap-1">
+								<button class="btn-dropdown btn-search-dropdown">
+									<i class="bi bi-geo-alt"></i>
+								</button>
+								<input
+									type="text"
+									placeholder="e.g. Destination, Property ID"
+									class="search__input"
+								/>
+							</div>
+							<div class="overlay"></div>
+							<div class="search__dropdown--wrapper">
+								<p class="text">Any Destination</p>
+								<button class="btn-close-search-dropdown d-lg-none">
+									<i class="bi bi-x"></i>
+								</button>
+
+								<div class="accordion accordion-flush" id="accordionFlushExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingOne">
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseOne"
+												aria-expanded="false"
+												aria-controls="flush-collapseOne"
+											>
+												<span>accordion 1</span>
+												<span class="right-icon">
+													<i class="bi bi-chevron-down"></i>
+												</span>
+											</button>
+										</h2>
+										<div
+											id="flush-collapseOne"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingOne"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												<div class="accordion-list">
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingTwo">
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseTwo"
+												aria-expanded="false"
+												aria-controls="flush-collapseTwo"
+											>
+												<span>accordion 1</span>
+												<span class="right-icon">
+													<i class="bi bi-chevron-down"></i>
+												</span>
+											</button>
+										</h2>
+										<div
+											id="flush-collapseTwo"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingTwo"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												<div class="accordion-list">
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingThree">
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseThree"
+												aria-expanded="false"
+												aria-controls="flush-collapseThree"
+											>
+												<span>accordion 1</span>
+												<span class="right-icon">
+													<i class="bi bi-chevron-down"></i>
+												</span>
+											</button>
+										</h2>
+										<div
+											id="flush-collapseThree"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingThree"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												<div class="accordion-list">
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingFour">
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseFour"
+												aria-expanded="false"
+												aria-controls="flush-collapseFour"
+											>
+												<span>accordion 1</span>
+												<span class="right-icon">
+													<i class="bi bi-chevron-down"></i>
+												</span>
+											</button>
+										</h2>
+										<div
+											id="flush-collapseFour"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingFour"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												<div class="accordion-list">
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="flush-headingFive">
+											<button
+												class="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#flush-collapseFive"
+												aria-expanded="false"
+												aria-controls="flush-collapseFive"
+											>
+												<span>accordion 1</span>
+												<span class="right-icon">
+													<i class="bi bi-chevron-down"></i>
+												</span>
+											</button>
+										</h2>
+										<div
+											id="flush-collapseFive"
+											class="accordion-collapse collapse"
+											aria-labelledby="flush-headingFive"
+											data-bs-parent="#accordionFlushExample"
+										>
+											<div class="accordion-body">
+												<div class="accordion-list">
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+													<a href="#" class="accordion-link">city</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search__calender search__item calender-dropdown">
+							<button class="btn-dropdown btn-search-dropdown btn-calender-dropdown">
+								<i class="bi bi-calendar2-week"></i>
+								<span class="text color-black">7 nights, no date</span>
+							</button>
+
+							<div class="overlay"></div>
+							<div class="calender-dropdown__content">
+								<div class="row">
+									<div class="col-md-12">
+										<div
+											class="calender-dropdown__nav d-flex align-items-center justify-content-center gap-1"
+										>
+											<h4 class="heading color-black">Staying for how long?</h4>
+											<select class="form-select" aria-label="Default select example">
+												<option selected>2 nights</option>
+												<option value="2 nights">2 nights</option>
+												<option value="3 nights">3 nights</option>
+												<option value="4 nights">4 nights</option>
+												<option value="5 nights">5 nights</option>
+												<option value="6 nights">6 nights</option>
+												<option value="7 nights">7 nights</option>
+											</select>
+										</div>
+										<div class="calendar-section">
+											<div class="row no-gutters">
+												<div class="col-md-6">
+													<div class="calendar calendar-first" id="calendar_first">
+														<div class="calendar_header">
+															<button class="switch-month switch-left">
+																<i class="fa fa-chevron-left"></i>
+															</button>
+															<h2>October 2022</h2>
+															<button class="switch-month switch-right">
+																<i class="fa fa-chevron-right"></i>
+															</button>
+														</div>
+														<div class="calendar_weekdays">
+															<div>Sun</div>
+															<div>Mon</div>
+															<div>Tue</div>
+															<div>Wed</div>
+															<div>Thu</div>
+															<div>Fri</div>
+															<div>Sat</div>
+														</div>
+														<div class="calendar_content">
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="past-date">1</div>
+															<div class="past-date">2</div>
+															<div class="past-date">3</div>
+															<div class="past-date">4</div>
+															<div class="past-date">5</div>
+															<div class="past-date">6</div>
+															<div class="past-date">7</div>
+															<div class="today">8</div>
+															<div>9</div>
+															<div>10</div>
+															<div>11</div>
+															<div>12</div>
+															<div>13</div>
+															<div>14</div>
+															<div>15</div>
+															<div>16</div>
+															<div>17</div>
+															<div>18</div>
+															<div>19</div>
+															<div>20</div>
+															<div>21</div>
+															<div>22</div>
+															<div>23</div>
+															<div>24</div>
+															<div>25</div>
+															<div>26</div>
+															<div>27</div>
+															<div>28</div>
+															<div>29</div>
+															<div>30</div>
+															<div>31</div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+														</div>
+													</div>
+													<div class="form-check check-1">
+														<input
+															class="form-check-input"
+															type="checkbox"
+															value=""
+															id="flexCheckDefault"
+														/>
+														<label class="form-check-label" for="flexCheckDefault">
+															Search month
+														</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="calendar calendar-second" id="calendar_second">
+														<div class="calendar_header">
+															<button class="switch-month switch-left">
+																<i class="fa fa-chevron-left"></i>
+															</button>
+															<h2>November 2022</h2>
+															<button class="switch-month switch-right">
+																<i class="fa fa-chevron-right"></i>
+															</button>
+														</div>
+														<div class="calendar_weekdays">
+															<div>Sun</div>
+															<div>Mon</div>
+															<div>Tue</div>
+															<div>Wed</div>
+															<div>Thu</div>
+															<div>Fri</div>
+															<div>Sat</div>
+														</div>
+														<div class="calendar_content">
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div>1</div>
+															<div>2</div>
+															<div>3</div>
+															<div>4</div>
+															<div>5</div>
+															<div>6</div>
+															<div>7</div>
+															<div>8</div>
+															<div>9</div>
+															<div>10</div>
+															<div>11</div>
+															<div>12</div>
+															<div>13</div>
+															<div>14</div>
+															<div>15</div>
+															<div>16</div>
+															<div>17</div>
+															<div>18</div>
+															<div>19</div>
+															<div>20</div>
+															<div>21</div>
+															<div>22</div>
+															<div>23</div>
+															<div>24</div>
+															<div>25</div>
+															<div>26</div>
+															<div>27</div>
+															<div>28</div>
+															<div>29</div>
+															<div>30</div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+															<div class="blank"></div>
+														</div>
+													</div>
+
+													<div class="form-check check-2">
+														<input
+															class="form-check-input"
+															type="checkbox"
+															value=""
+															id="flexCheckChecked"
+															checked
+														/>
+														<label class="form-check-label" for="flexCheckChecked">
+															No date in mind
+														</label>
+													</div>
+												</div>
+											</div>
+											<!-- End Row -->
+										</div>
+										<div
+											class="calender-dropdown__footer d-flex align-items-center justify-content-center"
+										>
+											<button class="btn-apply">apply</button>
+										</div>
+										<!-- End Calendar -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search__person people d-flex justify-content-between align-items-center">
+							<div class="people__count d-flex align-items-center">
+								<button class="btn-people-dropdwon">
+									<i class="bi bi-people"></i>
+									<span class="text">2 adults</span>
+								</button>
+
+								<div class="overlay"></div>
+								<div class="people__dropdown">
+									<div
+										class="people__dropdown--item d-flex justify-content-between align-items-center mb-2"
+									>
+										<h5 class="heading color-black">adults</h5>
+										<div class="btns d-flex align-items-center">
+											<button class="btn"><i class="bi bi-dash"></i></button>
+											<div class="count">2</div>
+											<button class="btn"><i class="bi bi-plus"></i></button>
+										</div>
+									</div>
+									<div
+										class="people__dropdown--item d-flex justify-content-between align-items-center mb-2"
+									>
+										<h5 class="heading color-black">Children (Between 2 - 17)</h5>
+										<div class="btns d-flex align-items-center">
+											<button class="btn"><i class="bi bi-dash"></i></button>
+											<div class="count">2</div>
+											<button class="btn"><i class="bi bi-plus"></i></button>
+										</div>
+									</div>
+									<div
+										class="people__dropdown--item d-flex justify-content-between align-items-center mb-2"
+									>
+										<h5 class="heading color-black">Infant (Under 2)</h5>
+										<div class="btns d-flex align-items-center">
+											<button class="btn"><i class="bi bi-dash"></i></button>
+											<div class="count">2</div>
+											<button class="btn"><i class="bi bi-plus"></i></button>
+										</div>
+									</div>
+
+									<button class="btn-done">done</button>
+								</div>
+							</div>
+							<button class="btn-submit">
+								<i class="bi bi-search"></i>
+								<span class="text d-lg-none">Find holidays</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- search box -->
+		<!-- Hero Section  -->
+		<div class="HeroSection">
+			<p class="Bread">Home > Our Villas > About James Villas</p>
+			<div class="HeroBox d-none d-lg-block">
+				<div class="row">
+					<div class="col-md-3 d-flex">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/weather/day/sunny.svg" alt="" />
+
+						<div>
+							<h1>541,943*+</h1>
+							<p>Holidays Booked*</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/villa-icon-white.svg" alt="" />
+
+						<div>
+							<h1>3000+</h1>
+							<p>Villa Properties</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex">
+						<img
+							src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-pointer-destinations.svg"
+							alt=""
+						/>
+
+						<div>
+							<h1>60</h1>
+							<p>Destinations</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/user-white.svg" alt="" />
+
+						<div>
+							<h1>2,139,559*+</h1>
+							<p>Lifetime Passengers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="HeroBox d-block d-lg-none">
+				<div class="row">
+					<div class="col-md-3 d-flex justify-content-center align-items-center">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/weather/day/sunny.svg" alt="" />
+
+						<div>
+							<h1>541,943*+</h1>
+							<p>Holidays Booked*</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center align-items-center d-none">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/villa-icon-white.svg" alt="" />
+
+						<div>
+							<h1>3000+</h1>
+							<p>Villa Properties</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center align-items-center d-none">
+						<img
+							src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-pointer-destinations.svg"
+							alt=""
+						/>
+
+						<div>
+							<h1>60</h1>
+							<p>Destinations</p>
+						</div>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center align-items-center d-none">
+						<img src="https://www.jamesvillas.co.uk/images/jvh/ui/user-white.svg" alt="" />
+
+						<div>
+							<h1>2,139,559*+</h1>
+							<p>Lifetime Passengers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Hero Section  -->
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="Shadow">
+						<h2>From a single villa...</h2>
+						<p>
+							Here at James Villas, we like to remember that we were once a person. We still hold
+							the family-run business values of James Villas founder, Jim Needham, who started with
+							a big idea and spare bedroom-office. Jim started James Villas in 1984, turning the
+							hobby of renting out his Lanzarote property into a business.
+						</p>
+						<p>
+							From a single villa, James has gone from strength to strength, now offering guests
+							over 3000 villas in more than 60 fabulous destinations across the Mediterranean,
+							Caribbean and America. Although, the first ever James Villas employee is still here
+							today!
+						</p>
+						<p>
+							We are the UK's leading villa holiday specialist and we love what we do. We are proud
+							of our reputation and passion for offering the very best villa holiday experiences and
+							are part of Awaze - Europe’s leading managed vacation rentals and holiday resorts
+							business.
+						</p>
+
+						<p class="BigPadding">
+							* Calculated on actual figures from 2002 & estimated figures between 1984 and 2001.
+							Updated 06 June 2018.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="History"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-our-history.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Our History</h2>
+									<p>
+										All good companies have a story. From one villa in Lanzarote to the UK's leading
+										villa holiday experts - delve into our history.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Affiliate"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-affiliates.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Our History</h2>
+									<p>
+										All good companies have a story. From one villa in Lanzarote to the UK's leading
+										villa holiday experts - delve into our history.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Charity"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-charity.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Charity and Fundraising</h2>
+									<p>
+										An active and present company in the local community, here at James we organise
+										fundraising days and events for our chosen charity of the year.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Charity"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-careers.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Careers with James</h2>
+									<p>
+										Interested in a career at James Villas? See a list of current vacancies here. If
+										we don't have what you looking for, please send us your details and we'll
+										consider you for future openings.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Book"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-why-book.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Why Book with James?</h2>
+									<p>
+										James Villa Holidays is the UK number one villa specialist, with over 30 years
+										'experience. We've handpicked each of our 3000 villas in more than 50
+										destinations, so you can be sure it is up to our high standards. Plus our ABTA
+										and ATOL bonding guarantees extra peace of mind.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Scheme"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-green-scheme.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>James Villa Holidays Green Scheme</h2>
+									<p>
+										At James we take our commitment to protecting the environment seriously. View
+										our selection of properties which meet our Green Scheme assessment criteria.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="AboutBox">
+								<img
+									class="Press"
+									src="https://www.jamesvillas.co.uk/images/jvh/ui/icon-about-press-centre.svg"
+									alt=""
+								/>
+								<div class="AboutText">
+									<h2>Press Centre</h2>
+									<p>
+										At James we love to talk about the exciting things that are happening in the
+										world of villa holidays. From destination trends to breaking news, keep up to
+										date and read it all here.
+									</p>
+									<a href=""
+										>Learn More
+										<img src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow-std.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid p-5">
+			<div class="row gap-5">
+				<div class="col-md-7 SignUpTimeline">
+					<h2 class="mb-1">BE THE FIRST TO KNOW</h2>
+					<p>
+						Straight to your inbox, our email newsletter is the one stop shop for expert villa
+						chatter, holiday inspiration and travel features, as well as the latest James Villas
+						news, promotions and flash sales.
+					</p>
+				</div>
+
+				<div class="col-md-4 SignBtn">
+					<h2 class="mb-1">Sign-up to our newsletter</h2>
+					<button>
+						<span class="MarginleftSpan"> Sign-up</span>
+						<img
+							class="MarginArrow"
+							src="https://www.jamesvillas.co.uk/images/jvh/ui/cta-arrow.svg"
+							alt=""
+						/>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<footer class="FooterColor">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="Advice">NEED HELP AND ADVICE?</h2>
+						<h2 class="Advice2">In a bit of a pickle?</h2>
+
+						<div class="row FooterLink">
+							<div class="col-md-4">
+								<a href="">Contact Us</a>
+								<a href="">Booking Conditions</a>
+								<a href="">Important Information</a>
+							</div>
+							<div class="col-md-4">
+								<a href=""> Stay Safe on Holiday</a>
+								<a href=""> Cookie Policy</a>
+								<a href=""> Privacy Notice</a>
+								<a href=""> Site Terms</a>
+							</div>
+							<div class="col-md-4">
+								<a href="">Affiliate Programme</a>
+								<a href="">Careers</a>
+								<a href="">Press Centre</a>
+								<a href="">Frequently Asked Questions</a>
+							</div>
+						</div>
+						<div class="FooterParagraph">
+							<img src="../images/travel-aware.png" alt="" />
+							<p class="FooterP1">
+								TRAVEL AWARE - STAYING SAFE AND HEALTHY ABROAD The Foreign, Commonwealth and
+								Development Office (FCDO) provide the latest travel advice by country including
+								safety and security, entry requirements, travel warnings and health. For the latest
+								FCDO advice please refer to
+								<a href="www.gov.uk/travelaware.">www.gov.uk/travelaware.</a> Current travel health
+								information can be found by visiting
+								<a href="www.travelhealthpro.org.uk">www.travelhealthpro.org.uk</a> a resource set
+								up by the Department of Health. The advice can change on all sites so please check
+								regularly for updates.
+							</p>
+						</div>
+						<div class="FooterSocial flex-wrap">
+							<div class="d-flex">
+								<img class="fb" src="../images/facebook.svg" alt="" />
+								<img class="Twiter" src="../images/twitter.svg" alt="" />
+								<img class="pinterest" src="../images/pinterest.svg" alt="" />
+								<img class="Youtube" src="../images/youtube.svg" alt="" />
+								<img class="instagram" src="../images/instagram.svg" alt="" />
+							</div>
+							<div>
+								<p class="AppDown"><a href="">Download Our App</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-3 ContactImg">
+						<h3 class="Contacth3">CONTACT US</h3>
+						<img src="https://i.jamesvillas.co.uk/images/jvh/ui/logo-abta-v3.svg" alt="" />
+
+						<div class="Feedback">
+							<img src="../images/chat-left-dots-fill.svg" alt="" />
+							<p>Feedback</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="Copyright">
+					<hr />
+					<div class="row">
+						<div class="col-md-8">
+							<div>
+								<p>
+									<span class="CopyJames">© Copyright James Villa Holidays 2022</span> <br />
+									<a href="">Sitemap</a> | <a href="">Foreign Travel Advice</a> |
+									<a href=""> Modern Slavery Statement</a> |
+									<a href=""> <sup>*</sup> † Promotion Conditions</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 pb-5">
+							<div class="Leftpayment">
+								<p>FORMS OF PAYMENT</p>
+								<div class="Payment ms-3">
+									<img src="../images/visa.jpg" alt="" />
+									<img src="../images/1-18325_logo-mastercard-hd-png-download.png" alt="" />
+									<img src="../images/north.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+		<script src="../js/navbar.js"></script>
+
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/Carousel.js"></script>
+	</body>
+</html>

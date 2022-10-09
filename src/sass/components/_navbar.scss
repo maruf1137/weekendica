@@ -170,3 +170,48 @@
 		}
 	}
 }
+
+.HeaderLogo {
+	color: #2c2c2c;
+	font-size: 12px;
+}
+nav {
+	height: 40px;
+	padding: 10px;
+}
+.nav-link {
+	font-size: 13px;
+	color: #2c2c2c;
+	font-weight: 500;
+}
+
+.VrArea {
+	color: #d5d3d3;
+	height: 20px !important;
+	width: 1px;
+}
+
+.dropdown-toggle {
+	font-size: 13px;
+	color: #2c2c2c !important;
+	font-weight: 500 !important;
+	margin-right: 20px;
+}
+
+.navbar .HeaderLogo:hover {
+	color: #fd8a52;
+}
+svg:hover path {
+	fill: #fd8a52;
+	transition: all ease 0.3s;
+}
+.Logo1 img {
+	margin-top: -13px;
+	margin-left: 20px;
+}
+
+@media all and (max-width: 767px) {
+	.DisplayNoneMD {
+		display: none;
+	}
+}

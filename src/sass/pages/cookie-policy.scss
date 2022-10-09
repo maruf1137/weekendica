@@ -1,0 +1,46 @@
+.stay-safe-on-holiday-page {
+	.cookie-card {
+		padding: 1rem;
+		background-color: #d8ecf1;
+		border: 1px solid $color-tirtiary;
+		border-radius: 0.4rem;
+		gap: 1rem;
+
+		i {
+			color: $color-tirtiary;
+		}
+	}
+
+	.cookie-list {
+		list-style-type: disc !important;
+		padding-left: 4rem;
+	}
+
+	.cookie-text {
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 0 auto;
+		}
+
+		/* Zebra striping */
+		tr:nth-of-type(odd) {
+			background: #f7f7f7;
+		}
+
+		th {
+			background: #de485f;
+			color: white;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		td,
+		th {
+			padding: 1.5rem;
+			text-align: left;
+			font-size: 1.2rem;
+			vertical-align: middle;
+		}
+	}
+}

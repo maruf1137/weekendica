@@ -1,0 +1,201 @@
+.submit-request-page,
+.en-gb-page {
+	font-family: $font-secondary;
+
+	h2,
+	h3,
+	h4,
+	h5,
+	p {
+		font-family: $font-secondary;
+		color: $color-white;
+	}
+
+	.text {
+		color: $color-white;
+	}
+
+	.header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../img/submit-request-hero.jpg');
+		height: 18rem;
+		// max-height: 18rem;
+		min-height: auto !important;
+
+		&__nav {
+			padding: 1rem 0;
+			gap: 1rem;
+
+			a {
+				text-decoration: none;
+			}
+
+			.icon {
+				fill: $color-white;
+			}
+
+			.arrow-icon {
+				color: $color-white;
+			}
+		}
+		.form {
+			width: 40%;
+			background-color: $color-white;
+			padding: 0 1rem;
+			border-radius: 0.6rem;
+			margin-left: auto;
+
+			@media only screen and (max-width: $mbl-land) {
+				width: 90%;
+				margin: 0 auto;
+			}
+
+			i {
+				color: $color-secondary;
+			}
+
+			input {
+				padding: 0.6rem 1rem;
+				width: 100%;
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	.submit-section {
+		h3,
+		p {
+			color: $color-black;
+		}
+
+		.submit {
+			&__card {
+				background-color: #f8f8f8;
+				box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+				padding: 4rem;
+				margin-top: -22rem;
+				border-radius: 0.6rem;
+				position: relative;
+				z-index: 2;
+
+				@media only screen and (max-width: $laptop-land) {
+					margin-top: -17rem;
+				}
+				@media only screen and (max-width: $mbl-land) {
+					padding: 1.5rem;
+				}
+
+				h3 {
+					font-size: 2.4rem;
+					font-weight: 500;
+				}
+
+				.text,
+				label {
+					font-size: 1.6rem;
+					font-weight: 500;
+				}
+
+				input,
+				textarea,
+				select {
+					border: 1px solid #d9d9d9;
+					padding: 0.6rem 1rem;
+					border-radius: 0.6rem;
+					text-transform: capitalize;
+				}
+
+				select {
+					font-size: 1.6rem;
+				}
+
+				.star {
+					color: $color-secondary;
+				}
+
+				.description-text {
+					color: $color-tirtiary;
+				}
+
+				.file-label {
+					padding: 2rem;
+					border: 1px dashed #ddd;
+					background-color: $color-white;
+					cursor: pointer;
+					// display: flex;
+					text-align: center;
+					color: $color-tirtiary;
+				}
+				.file-input {
+					height: 0;
+					width: 0;
+					overflow: hidden;
+					display: none;
+				}
+
+				.btn-submit {
+					background-color: $color-secondary;
+					border: 1px solid $color-secondary;
+					color: $color-white;
+					text-transform: capitalize;
+
+					&:hover {
+						background-color: transparent;
+						color: $color-secondary;
+					}
+				}
+			}
+		}
+
+		.content {
+			padding: 0 0 0 5rem;
+
+			@media only screen and (max-width: $laptop-land) {
+				padding: 0 !important;
+			}
+
+			h4 {
+				color: $color-black;
+				font-weight: 600;
+			}
+			&__top {
+				gap: 4rem;
+				border-bottom: 1px solid #eee;
+				padding-bottom: 4rem;
+
+				@media only screen and (max-width: $mbl-land) {
+					flex-direction: column !important;
+				}
+			}
+
+			&__item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				// white-space: nowrap;
+
+				span {
+					white-space: nowrap;
+					display: inline-block;
+					width: 40%;
+				}
+			}
+
+			&__bottom {
+				padding-top: 4rem;
+			}
+		}
+
+		.back-btn {
+			gap: 1rem;
+			color: $color-secondary;
+			text-decoration: none;
+
+			i,
+			.text {
+				color: $color-secondary;
+			}
+		}
+	}
+}

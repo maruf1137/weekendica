@@ -1,0 +1,156 @@
+.page {
+	font-family: $font-secondary;
+
+	.header {
+		height: auto;
+		background-image: none !important;
+		min-height: auto;
+
+		&__nav {
+			padding: 1rem 10rem;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+
+			@media only screen and (max-width: $tab-land) {
+				padding: 1rem 0;
+			}
+			@media only screen and (max-width: $mbl-land) {
+				padding: 1rem 2rem;
+			}
+
+			a,
+			p {
+				color: $color-black;
+				text-decoration: none;
+			}
+
+			i {
+				color: $color-black;
+			}
+		}
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	p {
+		font-family: $font-secondary;
+		color: $color-black;
+	}
+
+	h3 {
+		font-weight: 600 !important;
+		font-size: 3rem;
+	}
+
+	h5 {
+		font-weight: 600;
+		font-size: 2rem;
+	}
+
+	.text {
+		color: $color-black;
+	}
+}
+
+.booking-conditions-page,
+.stay-safe-on-holiday-page {
+	.condition-section {
+	}
+	.condition {
+		padding: 0 10rem;
+
+		@media only screen and (max-width: $tab-land) {
+			padding: 0;
+		}
+
+		@media only screen and (max-width: $mbl-land) {
+			padding: 0 2rem;
+		}
+
+		h3 {
+			font-weight: 500;
+		}
+
+		p {
+		}
+
+		&__item {
+			.text {
+				font-weight: 500;
+			}
+		}
+
+		&__link {
+			text-decoration: none;
+			color: $color-primary;
+		}
+	}
+
+	.newsletter-section {
+		padding: 5rem 0;
+		background-color: #f0f0f0;
+	}
+
+	.newsletter {
+		@media only screen and (max-width: $mbl-land) {
+			padding: 0 2rem;
+		}
+		&__list {
+		}
+
+		&__item {
+			h2 {
+				font-weight: 400;
+				font-size: 3rem;
+			}
+
+			.text {
+				font-weight: 500;
+			}
+
+			h3 {
+				font-weight: 500;
+				font-size: 2.6rem;
+			}
+		}
+
+		&__btn {
+			text-decoration: none;
+			border: 1px solid $color-secondary;
+			background-color: $color-secondary;
+			transition: all 0.3s;
+			width: 100%;
+			display: block;
+			padding: 0.8rem 0;
+			border-radius: 0.4rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			.text,
+			i {
+				color: $color-white;
+				transition: all 0.3s;
+			}
+
+			i {
+				position: absolute;
+				top: 50%;
+				right: 1rem;
+				transform: translateY(-50%);
+			}
+
+			&:hover {
+				background-color: transparent;
+
+				.text,
+				i {
+					color: $color-secondary;
+				}
+			}
+		}
+	}
+}

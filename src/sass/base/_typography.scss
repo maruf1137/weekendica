@@ -74,10 +74,17 @@ h6.heading {
 }
 
 .color-black {
-	color: $color-black;
+	color: $color-black !important;
 }
 .color-primary {
-	color: $color-primary;
+	color: $color-secondary !important;
+}
+.color-secondary {
+	color: $color-primary !important;
+}
+
+.link {
+	text-decoration: none;
 }
 
 @mixin pos-center {

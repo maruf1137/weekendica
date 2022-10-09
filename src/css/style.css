@@ -4,10 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
   outline: none;
-  text-transform: capitalize;
 }
 
 html {
@@ -26,15 +24,21 @@ body {
 
 .section {
   padding: 10rem 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 132rem !important;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 62em) {
-  .section {
-    padding: 10rem 5rem !important;
+  .container {
+    padding: 0 5rem;
   }
 }
 @media only screen and (max-width: 30em) {
-  .section {
-    padding: 10rem 2rem !important;
+  .container {
+    padding: 0 2rem;
   }
 }
 
@@ -111,11 +115,19 @@ h6.heading {
 }
 
 .color-black {
-  color: #000;
+  color: #000 !important;
 }
 
 .color-primary {
-  color: #f95355;
+  color: #fd8a52 !important;
+}
+
+.color-secondary {
+  color: #f95355 !important;
+}
+
+.link {
+  text-decoration: none;
 }
 
 html,
@@ -1250,6 +1262,54 @@ a:hover {
   font-weight: 500;
 }
 
+.HeaderLogo {
+  color: #2c2c2c;
+  font-size: 12px;
+}
+
+nav {
+  height: 40px;
+  padding: 10px;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.VrArea {
+  color: #d5d3d3;
+  height: 20px !important;
+  width: 1px;
+}
+
+.dropdown-toggle {
+  font-size: 13px;
+  color: #2c2c2c !important;
+  font-weight: 500 !important;
+  margin-right: 20px;
+}
+
+.navbar .HeaderLogo:hover {
+  color: #fd8a52;
+}
+
+svg:hover path {
+  fill: #fd8a52;
+  transition: all ease 0.3s;
+}
+
+.Logo1 img {
+  margin-top: -13px;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 767px) {
+  .DisplayNoneMD {
+    display: none;
+  }
+}
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-hero.jpg");
   background-position: center center;
@@ -1987,6 +2047,1260 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+
+.submit-request-page,
+.en-gb-page {
+  font-family: "Montserrat", sans-serif;
+}
+.submit-request-page h2,
+.submit-request-page h3,
+.submit-request-page h4,
+.submit-request-page h5,
+.submit-request-page p,
+.en-gb-page h2,
+.en-gb-page h3,
+.en-gb-page h4,
+.en-gb-page h5,
+.en-gb-page p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.submit-request-page .text,
+.en-gb-page .text {
+  color: #fff;
+}
+.submit-request-page .header,
+.en-gb-page .header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/submit-request-hero.jpg");
+  height: 18rem;
+  min-height: auto !important;
+}
+.submit-request-page .header__nav,
+.en-gb-page .header__nav {
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.submit-request-page .header__nav a,
+.en-gb-page .header__nav a {
+  text-decoration: none;
+}
+.submit-request-page .header__nav .icon,
+.en-gb-page .header__nav .icon {
+  fill: #fff;
+}
+.submit-request-page .header__nav .arrow-icon,
+.en-gb-page .header__nav .arrow-icon {
+  color: #fff;
+}
+.submit-request-page .header .form,
+.en-gb-page .header .form {
+  width: 40%;
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 0.6rem;
+  margin-left: auto;
+}
+@media only screen and (max-width: 35.9375em) {
+  .submit-request-page .header .form,
+.en-gb-page .header .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.submit-request-page .header .form i,
+.en-gb-page .header .form i {
+  color: #fd8a52;
+}
+.submit-request-page .header .form input,
+.en-gb-page .header .form input {
+  padding: 0.6rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.submit-request-page .submit-section h3,
+.submit-request-page .submit-section p,
+.en-gb-page .submit-section h3,
+.en-gb-page .submit-section p {
+  color: #000;
+}
+.submit-request-page .submit-section .submit__card,
+.en-gb-page .submit-section .submit__card {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  padding: 4rem;
+  margin-top: -22rem;
+  border-radius: 0.6rem;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 75em) {
+  .submit-request-page .submit-section .submit__card,
+.en-gb-page .submit-section .submit__card {
+    margin-top: -17rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .submit-request-page .submit-section .submit__card,
+.en-gb-page .submit-section .submit__card {
+    padding: 1.5rem;
+  }
+}
+.submit-request-page .submit-section .submit__card h3,
+.en-gb-page .submit-section .submit__card h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.submit-request-page .submit-section .submit__card .text,
+.submit-request-page .submit-section .submit__card label,
+.en-gb-page .submit-section .submit__card .text,
+.en-gb-page .submit-section .submit__card label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.submit-request-page .submit-section .submit__card input,
+.submit-request-page .submit-section .submit__card textarea,
+.submit-request-page .submit-section .submit__card select,
+.en-gb-page .submit-section .submit__card input,
+.en-gb-page .submit-section .submit__card textarea,
+.en-gb-page .submit-section .submit__card select {
+  border: 1px solid #d9d9d9;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  text-transform: capitalize;
+}
+.submit-request-page .submit-section .submit__card select,
+.en-gb-page .submit-section .submit__card select {
+  font-size: 1.6rem;
+}
+.submit-request-page .submit-section .submit__card .star,
+.en-gb-page .submit-section .submit__card .star {
+  color: #fd8a52;
+}
+.submit-request-page .submit-section .submit__card .description-text,
+.en-gb-page .submit-section .submit__card .description-text {
+  color: #2895c9;
+}
+.submit-request-page .submit-section .submit__card .file-label,
+.en-gb-page .submit-section .submit__card .file-label {
+  padding: 2rem;
+  border: 1px dashed #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  color: #2895c9;
+}
+.submit-request-page .submit-section .submit__card .file-input,
+.en-gb-page .submit-section .submit__card .file-input {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: none;
+}
+.submit-request-page .submit-section .submit__card .btn-submit,
+.en-gb-page .submit-section .submit__card .btn-submit {
+  background-color: #fd8a52;
+  border: 1px solid #fd8a52;
+  color: #fff;
+  text-transform: capitalize;
+}
+.submit-request-page .submit-section .submit__card .btn-submit:hover,
+.en-gb-page .submit-section .submit__card .btn-submit:hover {
+  background-color: transparent;
+  color: #fd8a52;
+}
+.submit-request-page .submit-section .content,
+.en-gb-page .submit-section .content {
+  padding: 0 0 0 5rem;
+}
+@media only screen and (max-width: 75em) {
+  .submit-request-page .submit-section .content,
+.en-gb-page .submit-section .content {
+    padding: 0 !important;
+  }
+}
+.submit-request-page .submit-section .content h4,
+.en-gb-page .submit-section .content h4 {
+  color: #000;
+  font-weight: 600;
+}
+.submit-request-page .submit-section .content__top,
+.en-gb-page .submit-section .content__top {
+  gap: 4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .submit-request-page .submit-section .content__top,
+.en-gb-page .submit-section .content__top {
+    flex-direction: column !important;
+  }
+}
+.submit-request-page .submit-section .content__item,
+.en-gb-page .submit-section .content__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-request-page .submit-section .content__item span,
+.en-gb-page .submit-section .content__item span {
+  white-space: nowrap;
+  display: inline-block;
+  width: 40%;
+}
+.submit-request-page .submit-section .content__bottom,
+.en-gb-page .submit-section .content__bottom {
+  padding-top: 4rem;
+}
+.submit-request-page .submit-section .back-btn,
+.en-gb-page .submit-section .back-btn {
+  gap: 1rem;
+  color: #fd8a52;
+  text-decoration: none;
+}
+.submit-request-page .submit-section .back-btn i,
+.submit-request-page .submit-section .back-btn .text,
+.en-gb-page .submit-section .back-btn i,
+.en-gb-page .submit-section .back-btn .text {
+  color: #fd8a52;
+}
+
+.page {
+  font-family: "Montserrat", sans-serif;
+}
+.page .header {
+  height: auto;
+  background-image: none !important;
+  min-height: auto;
+}
+.page .header__nav {
+  padding: 1rem 10rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 62em) {
+  .page .header__nav {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .page .header__nav {
+    padding: 1rem 2rem;
+  }
+}
+.page .header__nav a,
+.page .header__nav p {
+  color: #000;
+  text-decoration: none;
+}
+.page .header__nav i {
+  color: #000;
+}
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page p {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+.page h3 {
+  font-weight: 600 !important;
+  font-size: 3rem;
+}
+.page h5 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.page .text {
+  color: #000;
+}
+
+.booking-conditions-page .condition,
+.stay-safe-on-holiday-page .condition {
+  padding: 0 10rem;
+}
+@media only screen and (max-width: 62em) {
+  .booking-conditions-page .condition,
+.stay-safe-on-holiday-page .condition {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .booking-conditions-page .condition,
+.stay-safe-on-holiday-page .condition {
+    padding: 0 2rem;
+  }
+}
+.booking-conditions-page .condition h3,
+.stay-safe-on-holiday-page .condition h3 {
+  font-weight: 500;
+}
+.booking-conditions-page .condition__item .text,
+.stay-safe-on-holiday-page .condition__item .text {
+  font-weight: 500;
+}
+.booking-conditions-page .condition__link,
+.stay-safe-on-holiday-page .condition__link {
+  text-decoration: none;
+  color: #f95355;
+}
+.booking-conditions-page .newsletter-section,
+.stay-safe-on-holiday-page .newsletter-section {
+  padding: 5rem 0;
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 35.9375em) {
+  .booking-conditions-page .newsletter,
+.stay-safe-on-holiday-page .newsletter {
+    padding: 0 2rem;
+  }
+}
+.booking-conditions-page .newsletter__item h2,
+.stay-safe-on-holiday-page .newsletter__item h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.booking-conditions-page .newsletter__item .text,
+.stay-safe-on-holiday-page .newsletter__item .text {
+  font-weight: 500;
+}
+.booking-conditions-page .newsletter__item h3,
+.stay-safe-on-holiday-page .newsletter__item h3 {
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+.booking-conditions-page .newsletter__btn,
+.stay-safe-on-holiday-page .newsletter__btn {
+  text-decoration: none;
+  border: 1px solid #fd8a52;
+  background-color: #fd8a52;
+  transition: all 0.3s;
+  width: 100%;
+  display: block;
+  padding: 0.8rem 0;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.booking-conditions-page .newsletter__btn .text,
+.booking-conditions-page .newsletter__btn i,
+.stay-safe-on-holiday-page .newsletter__btn .text,
+.stay-safe-on-holiday-page .newsletter__btn i {
+  color: #fff;
+  transition: all 0.3s;
+}
+.booking-conditions-page .newsletter__btn i,
+.stay-safe-on-holiday-page .newsletter__btn i {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.booking-conditions-page .newsletter__btn:hover,
+.stay-safe-on-holiday-page .newsletter__btn:hover {
+  background-color: transparent;
+}
+.booking-conditions-page .newsletter__btn:hover .text,
+.booking-conditions-page .newsletter__btn:hover i,
+.stay-safe-on-holiday-page .newsletter__btn:hover .text,
+.stay-safe-on-holiday-page .newsletter__btn:hover i {
+  color: #fd8a52;
+}
+
+.stay-safe-on-holiday-page h3 {
+  font-weight: 600 !important;
+  font-size: 3rem;
+}
+.stay-safe-on-holiday-page h5 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.stay-safe-on-holiday-page .text {
+  color: #000;
+}
+
+.stay-safe-on-holiday-page .cookie-card {
+  padding: 1rem;
+  background-color: #d8ecf1;
+  border: 1px solid #2895c9;
+  border-radius: 0.4rem;
+  gap: 1rem;
+}
+.stay-safe-on-holiday-page .cookie-card i {
+  color: #2895c9;
+}
+.stay-safe-on-holiday-page .cookie-list {
+  list-style-type: disc !important;
+  padding-left: 4rem;
+}
+.stay-safe-on-holiday-page .cookie-text {
+  /* Zebra striping */
+}
+.stay-safe-on-holiday-page .cookie-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.stay-safe-on-holiday-page .cookie-text tr:nth-of-type(odd) {
+  background: #f7f7f7;
+}
+.stay-safe-on-holiday-page .cookie-text th {
+  background: #de485f;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.stay-safe-on-holiday-page .cookie-text td,
+.stay-safe-on-holiday-page .cookie-text th {
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.en-gb-page .header {
+  padding: 5rem 0;
+  height: auto !important;
+  text-align: center;
+}
+.en-gb-page .header .container {
+  max-width: 90rem !important;
+}
+.en-gb-page .header__item {
+  height: 100%;
+}
+.en-gb-page .header__link {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  transition: all 0.3s;
+}
+.en-gb-page .header__link i {
+  font-size: 3.5rem;
+  color: #000;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 35.9375em) {
+  .en-gb-page .header__link i {
+    display: none;
+  }
+}
+.en-gb-page .header__link .text {
+  color: #000;
+  transition: all 0.3s;
+}
+.en-gb-page .header__link:hover {
+  background-color: #fd8a52;
+}
+.en-gb-page .header__link:hover i,
+.en-gb-page .header__link:hover .text {
+  color: #fff;
+}
+.en-gb-page .header .form {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.en-gb-page h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.en-gb-page .news__card {
+  max-width: 57rem;
+  width: 100%;
+  background-color: rgb(212, 232, 239);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.en-gb-page .news__card .card__btns .btn-dot {
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #333;
+  border: none;
+  outline: none;
+}
+.en-gb-page .article__item {
+  display: block;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+.en-gb-page .article__item:hover {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+}
+.en-gb-page .contact-btn {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5rem 0;
+  gap: 0.6rem;
+}
+@media only screen and (max-width: 30em) {
+  .en-gb-page .contact-btn {
+    flex-direction: column;
+  }
+}
+.en-gb-page .contact-btn h4,
+.en-gb-page .contact-btn .link {
+  font-size: 2.2rem;
+}
+
+.ames-villas .nav {
+  background-color: #fff;
+  padding: 1rem 5rem 0 5rem;
+  gap: 2rem;
+  height: auto;
+}
+.ames-villas .nav__logo-area .btn-left-sidebar {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+  padding: 0;
+}
+.ames-villas .nav__logo {
+  height: 11rem;
+  width: 20rem;
+}
+@media only screen and (max-width: 75em) {
+  .ames-villas .nav__logo {
+    height: 6rem;
+    width: 12rem;
+  }
+}
+.ames-villas .nav__logo .logo {
+  height: 100%;
+  width: 100%;
+}
+.ames-villas .nav__logo .logo img {
+  height: 100%;
+  width: 100%;
+}
+.ames-villas .nav__dielog-link {
+  font-size: 1.4rem;
+}
+.ames-villas .nav__link-wrapper .logo-abta {
+  height: 4.5rem;
+  width: 8rem;
+}
+.ames-villas .nav__link-wrapper .logo-abta img {
+  height: 100%;
+  width: 100%;
+}
+.ames-villas .nav__list {
+  border-top: 1px solid #eee;
+  padding: 1.2rem 0;
+  gap: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .ames-villas .nav__list {
+    transform: translateX(-100%) !important;
+  }
+}
+.ames-villas .nav__link {
+  color: #000;
+  font-weight: 500;
+  position: relative;
+}
+.ames-villas .nav__link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fd8a52;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 75em) {
+  .ames-villas .nav__link::after {
+    display: none;
+  }
+}
+.ames-villas .nav__link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.ames-villas .show-left-sidebar h4 {
+  padding: 0 2rem;
+}
+.ames-villas .show-left-sidebar .btn-close-left-sidebar {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+}
+.ames-villas .show-left-sidebar .btn-close-left-sidebar i {
+  color: #000;
+  font-size: 3rem;
+}
+.ames-villas .show-left-sidebar .nav__list {
+  transform: translate(0) !important;
+  gap: 0;
+}
+.ames-villas .show-left-sidebar .nav__item {
+  width: 100%;
+}
+.ames-villas .show-left-sidebar .nav__link {
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.ames-villas .show-rightSidebar .navTop__list {
+  transform: translateX(0);
+}
+.ames-villas .navTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5rem;
+}
+.ames-villas .navTop .btn-open-rightSidebar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.ames-villas .navTop .btn-open-rightSidebar i {
+  font-size: 3.5rem;
+  color: #000;
+  padding: 0;
+}
+@media only screen and (max-width: 48em) {
+  .ames-villas .navTop {
+    right: 1rem;
+  }
+}
+.ames-villas .navTop__list {
+  padding: 0.6rem;
+  transition: all 0.3s;
+  height: 100%;
+}
+@media only screen and (max-width: 48em) {
+  .ames-villas .navTop__list {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    width: 26rem;
+    height: 100%;
+    z-index: 200;
+    transform: translateX(100%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .ames-villas .navTop__list .btn-close-right-sidebar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0rem;
+    right: 2rem;
+  }
+  .ames-villas .navTop__list .btn-close-right-sidebar i {
+    font-size: 3rem;
+    color: #000;
+  }
+}
+.ames-villas .navTop__item:not(:last-child) {
+  border-right: 1px solid red;
+}
+@media only screen and (max-width: 48em) {
+  .ames-villas .navTop__item:not(:last-child) {
+    border: none;
+  }
+}
+.ames-villas .navTop__link {
+  text-decoration: none;
+  padding: 0rem 1.5rem;
+}
+.ames-villas .navTop__link i {
+  color: #000;
+}
+.ames-villas .navTop__link .text {
+  font-size: 1.4rem;
+}
+.ames-villas .navTop__dropdown {
+  position: relative;
+  padding-bottom: 1rem;
+}
+.ames-villas .navTop__dropdown .right-icon {
+  transition: all 0.3s;
+}
+.ames-villas .navTop__dropdown--list {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 7px 64px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  position: relative;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .ames-villas .navTop__dropdown--list {
+    position: relative;
+    box-shadow: none;
+    padding-left: 2rem;
+    display: none !important;
+  }
+}
+.ames-villas .navTop__dropdown--list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(48deg);
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: white;
+  z-index: 8;
+}
+.ames-villas .navTop__dropdown .show-dropdown {
+  display: flex !important;
+}
+.ames-villas .navTop__dropdown--link {
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 9;
+  text-transform: capitalize;
+}
+.ames-villas .navTop__dropdown--link:hover {
+  background-color: #eee;
+}
+.ames-villas .navTop__dropdown:hover .right-icon {
+  transform: rotate(90deg);
+}
+.ames-villas .navTop__dropdown:hover .navTop__dropdown--list {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.ames-villas .selectpicker-dropdown .right-icon {
+  transform: rotate(91deg);
+  transition: all 0.3s;
+}
+.ames-villas .selectpicker-dropdown .dropdown-toggle {
+  margin-right: 0;
+}
+.ames-villas .selectpicker-dropdown .dropdown-toggle::after {
+  display: none;
+}
+.ames-villas .selectpicker-dropdown .bootstrap-select > .btn {
+  width: auto !important;
+  padding: 0 !important;
+}
+.ames-villas .selectpicker-dropdown .bootstrap-select > .btn .caret {
+  display: none;
+}
+.ames-villas .selectpicker-dropdown .bootstrap-select.btn-group .btn .filter-option {
+  width: 100%;
+  height: 100%;
+}
+.ames-villas .selectpicker-dropdown .btn-default {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.ames-villas .selectpicker-dropdown .btn-default:hover, .ames-villas .selectpicker-dropdown .btn-default:focus {
+  border-color: none;
+  background-color: none;
+}
+.ames-villas .selectpicker-dropdown .bootstrap-select .btn:focus {
+  outline: none !important;
+  outline: none -webkit-focus-ring-color !important;
+  outline-offset: 0 !important;
+  background-color: transparent;
+}
+.ames-villas .selectpicker-dropdown .bootstrap-select.btn-group:not(.input-group-btn) {
+  margin-bottom: 0;
+}
+.ames-villas .selectpicker-dropdown:hover .right-icon {
+  transform: rotate(-90deg);
+}
+.ames-villas .search {
+  background-color: #f0f0f0;
+  padding: 1.5rem 0;
+}
+.ames-villas .search__wrapper {
+  position: relative;
+}
+.ames-villas .search__wrapper .btn-form {
+  width: 100%;
+  height: 5rem;
+  background-color: #003865;
+  display: block;
+  border: none;
+  outline: none;
+}
+.ames-villas .search__wrapper .btn-form i {
+  color: #fff;
+}
+.ames-villas .search__wrapper .btn-close-form {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  display: none;
+}
+.ames-villas .search__wrapper .btn-close-form i {
+  color: #000;
+  font-size: 3rem;
+}
+.ames-villas .search__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search__form {
+    grid-template-columns: repeat(1, 1fr);
+    height: 0;
+    overflow: hidden;
+  }
+}
+.ames-villas .search__item {
+  background-color: #fff;
+  padding: 0;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search__item {
+    height: 5rem;
+    width: 100%;
+  }
+}
+.ames-villas .search__loaction .btn-dropdown {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1.2rem 2rem;
+  padding-right: 0;
+}
+.ames-villas .search__loaction .btn-dropdown:hover, .ames-villas .search__loaction .btn-dropdown:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.ames-villas .search__loaction .btn-dropdown i {
+  font-size: 2.2rem;
+  color: #fd8a52;
+}
+.ames-villas .search__loaction input {
+  padding: 2rem 1rem;
+  width: 100%;
+  border: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.ames-villas .search__loaction input:hover, .ames-villas .search__loaction input:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.ames-villas .search__dropdown {
+  position: relative;
+}
+.ames-villas .search__dropdown--wrapper {
+  position: absolute;
+  background: #fff;
+  z-index: 2;
+  padding: 1rem;
+  width: 36rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.ames-villas .search__dropdown--wrapper .text {
+  color: #000;
+  padding: 0 1.5rem;
+}
+.ames-villas .search__dropdown .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.ames-villas .search__dropdown .show-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.ames-villas .search__dropdown .show-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.ames-villas .search .search__dropdown--wrapper {
+  overflow-y: scroll;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-item h2 {
+  margin-top: 0;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button {
+  background-color: transparent;
+  color: #fff;
+  padding: 1.2rem 2rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button span,
+.ames-villas .search .search__dropdown--wrapper .accordion-button i {
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button span {
+  color: #000;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button i {
+  color: #fd8a52;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button::after {
+  display: none;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button:hover {
+  background-color: #003767;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-button:hover span,
+.ames-villas .search .search__dropdown--wrapper .accordion-button:hover i {
+  color: #fff;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-body {
+  background-color: #ecf1f4;
+  padding: 0;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-list {
+  display: flex;
+  flex-direction: column;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-link {
+  padding: 1.2rem 2.6rem;
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.ames-villas .search .search__dropdown--wrapper .accordion-link:hover {
+  background-color: #167ea1;
+  color: #fff;
+}
+.ames-villas .search .calender-dropdown .btn-dropdown {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+.ames-villas .search .calender-dropdown .btn-dropdown i {
+  font-size: 2rem;
+  color: #fd8a52;
+}
+.ames-villas .search .calender-dropdown .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  display: none;
+}
+.ames-villas .search .calender-dropdown__content {
+  width: 60vw;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  background-color: #fff;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  overflow-y: scroll;
+}
+.ames-villas .search .calender-dropdown .show-calendar {
+  display: block;
+}
+.ames-villas .search .calender-dropdown .calendar-section {
+  margin: 0;
+}
+.ames-villas .search .calender-dropdown .calendar-section .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.ames-villas .search .calender-dropdown .calendar-section .row .col-md-6:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+.ames-villas .search .calender-dropdown .calendar-section h2 {
+  font-size: 1.4rem;
+  color: #fd8a52 !important;
+  font-weight: 500;
+}
+.ames-villas .search .calender-dropdown .calendar-section .calendar_weekdays div {
+  font-size: 1.2rem !important;
+}
+.ames-villas .search .calender-dropdown .calendar-section .calendar_content div {
+  font-size: 1.2rem !important;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+}
+.ames-villas .search .calender-dropdown .calendar-section .form-check {
+  margin: 2rem;
+}
+.ames-villas .search .calender-dropdown .calendar-section .check-1 {
+  text-align: right;
+}
+.ames-villas .search .calender-dropdown .calendar-section .check-2 {
+  text-align: left;
+}
+.ames-villas .search .calender-dropdown__nav {
+  gap: 1rem !important;
+  padding-top: 2rem;
+}
+.ames-villas .search .calender-dropdown__nav h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.ames-villas .search .calender-dropdown__nav .form-select {
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+  text-indent: 5px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  max-width: 14rem;
+}
+.ames-villas .search .calender-dropdown__footer {
+  padding: 2rem;
+}
+.ames-villas .search .calender-dropdown__footer .btn-apply {
+  padding: 0.8rem 3rem;
+  background-color: #fd8a52;
+  border: 2px solid #fd8a52;
+  color: #fff;
+  transition: all 0.3s;
+}
+.ames-villas .search .calender-dropdown__footer .btn-apply:hover {
+  background-color: transparent;
+  color: #000;
+}
+.ames-villas .search .people {
+  gap: 2rem;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search .people {
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+  }
+}
+.ames-villas .search .people__count {
+  background-color: #fff;
+  width: 95%;
+  height: 100%;
+  position: relative;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search .people__count {
+    width: 100%;
+    height: 50%;
+  }
+}
+.ames-villas .search .people__count .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+.ames-villas .search .people .btn-people-dropdwon {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.ames-villas .search .people .btn-people-dropdwon i {
+  color: #000;
+  font-size: 2rem;
+  color: #fd8a52;
+}
+.ames-villas .search .people .btn-people-dropdwon .text {
+  color: #000;
+}
+.ames-villas .search .people .btn-submit {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  outline: none;
+  background-color: #fd8a52;
+  border-radius: 50%;
+}
+.ames-villas .search .people .btn-submit i {
+  font-size: 2rem;
+  color: #fff;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search .people .btn-submit {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.ames-villas .search .people__dropdown {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  top: 6rem;
+  z-index: 1;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: none;
+}
+.ames-villas .search .people__dropdown--item h5 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.ames-villas .search .people__dropdown--item .btns {
+  gap: 1rem;
+}
+.ames-villas .search .people__dropdown--item .btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: #eee;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ames-villas .search .people__dropdown--item .btn i {
+  font-size: 2rem;
+  color: #fd8a52;
+}
+.ames-villas .search .people__dropdown .btn-done {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: 1px solid #fd8a52;
+  padding: 0.8rem;
+  transition: all 0.3s;
+}
+.ames-villas .search .people__dropdown .btn-done:hover {
+  background-color: #fd8a52;
+  color: #fff;
+}
+.ames-villas .search .people .show-peple-drodpdown {
+  display: block;
+}
+@media only screen and (max-width: 62em) {
+  .ames-villas .search .search__dropdown--wrapper,
+.ames-villas .search .people__dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .ames-villas .search .calender-dropdown__content {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .ames-villas .search .btn-close-search-dropdown {
+    position: absolute;
+    top: 0rem;
+    right: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .ames-villas .search .btn-close-search-dropdown i {
+    font-size: 4rem;
+  }
+}
+.ames-villas .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

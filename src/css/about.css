@@ -1,0 +1,408 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* body {
+    overflow-x: hidden;
+} */
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* hero section  */
+.HeroSection {
+	background: linear-gradient(rgba(6, 58, 92, 0.6) 5%, rgba(13, 38, 67, 0) 40%, rgba(0, 0, 0, 0.5)),
+		url('../images/bg5.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 60vh;
+	position: relative;
+	color: #fff;
+}
+.Bread {
+	font-size: 13px;
+}
+.HeroBox {
+	background-color: #9eceda;
+	color: #fff;
+	width: 100%;
+	min-height: 100px;
+	padding: 12px;
+	position: absolute;
+	bottom: 4rem;
+	left: 0;
+	width: 100%;
+}
+.HeroBox img {
+	width: 40px;
+	height: 40px;
+}
+.HeroBox h1 {
+	font-size: 35px;
+}
+.HeroBox p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: -5px;
+	text-align: end;
+}
+.HeroBox img {
+	margin-right: 10px;
+}
+.Shadow {
+	background-color: #f6f6f6;
+	padding: 20px 0px 10px;
+	/* margin-top: -45px; */
+}
+.Shadow p {
+	width: 95%;
+	font-weight: 500;
+}
+.Shadow h2 {
+	margin-bottom: 20px;
+	font-size: 35px;
+}
+.BigPadding {
+	padding-top: 670px;
+	font-size: 14px;
+	font-weight: 500;
+}
+/* hero section  */
+
+.SignBtn button {
+	background: #fd8a52;
+	height: 42px;
+	line-height: 40px;
+	border-radius: 2px;
+	color: #ffffff;
+	padding: 0 32px 0 16px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #fd8a52;
+	font-size: 15px;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+/* About Area  */
+.History {
+	background-color: #e15e81;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+.AboutBox {
+	display: flex;
+	margin-top: 50px;
+}
+.AboutText h2 {
+	font-size: 30px;
+}
+.AboutText p {
+	text-transform: capitalize;
+	width: 95%;
+}
+.AboutText a {
+	text-decoration: none;
+	color: #fd8a52;
+	font-size: 20px;
+	font-weight: 500;
+}
+.Affiliate {
+	background-color: #f1be7c;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+.Charity {
+	background-color: #477e93;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+.Book {
+	background-color: #304d5b;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+.Scheme {
+	background-color: #acd2a3;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+.Press {
+	background-color: #d24d4e;
+	padding: 10px;
+	width: 150px;
+	height: 130px;
+	margin-right: 20px;
+}
+
+/* About Area  */
+
+/* Footer Area Design Start  */
+.FooterColor {
+	background-color: #003865;
+	padding: 10px;
+}
+.Advice {
+	font-family: 'Montserrat Light', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+	margin-top: 10px !important;
+}
+.Advice2 {
+	font-size: 26px;
+	line-height: 39px;
+	margin: 0 0 30px 0;
+	margin: 0 0 15px 0;
+	font-weight: bold;
+	color: #fff;
+}
+.FooterLink a {
+	color: #fd8a52;
+	text-decoration: none;
+	font-weight: 500;
+	margin-top: 4px;
+	display: block;
+}
+.FooterLink a:hover {
+	color: #fd8a52;
+}
+.FooterParagraph img {
+	width: 120px;
+	height: 95px;
+}
+.FooterParagraph {
+	display: flex;
+	margin-top: 20px;
+}
+.FooterP1 {
+	font-size: 13px;
+	line-height: 20px;
+	padding-top: 10px;
+	color: #fff;
+	margin-left: 15px !important;
+	font-weight: 500;
+}
+.FooterParagraph a {
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 19px;
+	padding-top: 10px;
+	color: #fff;
+}
+.FooterSocial {
+	display: flex;
+	margin-top: 20px;
+}
+.FooterSocial img {
+	width: 50px;
+	height: 45px;
+	padding: 8px;
+	border-radius: 1px;
+	margin-left: 7px;
+}
+.CopyJames {
+	font-size: 18px;
+}
+
+.fb {
+	background-color: #3b5998;
+}
+.fb:hover {
+	background-color: #32497b;
+}
+.Twiter {
+	background-color: #55acee;
+}
+.Twiter:hover {
+	background-color: #4091ce;
+}
+.pinterest {
+	background-color: #cb2027;
+}
+.pinterest:hover {
+	background-color: #982226;
+}
+.Youtube {
+	background-color: #bb0000;
+}
+.Youtube:hover {
+	background-color: #9c0505;
+}
+.instagram {
+	background-color: #0e5fa1;
+}
+.instagram:hover {
+	background-color: #074b83;
+}
+.FooterSocial svg:hover {
+	color: #fff;
+	fill: #333;
+	outline: #333;
+	cursor: pointer;
+}
+.AppDown {
+	margin-top: 7px !important;
+}
+.AppDown a {
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	margin-left: 15px;
+	text-decoration: underline;
+	margin-top: 5px;
+}
+.Contacth3 {
+	font-size: 20px;
+	color: #fff;
+}
+
+.ContactImg img {
+	width: 100px;
+	height: 70px;
+}
+
+.Feedback {
+	height: auto;
+	width: 45px;
+	margin-left: 0;
+	writing-mode: vertical-lr;
+	color: #fff;
+	font-size: 15px;
+	background-color: #003865;
+	border: 1px solid black;
+	padding-right: 10px;
+	display: flex;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateX(-50%);
+}
+.Feedback p {
+	margin-left: 12px;
+	margin-top: 10px;
+}
+.Feedback img {
+	width: 20px;
+	height: 20px;
+	margin-top: 12px;
+	margin-left: 12px;
+	transform: rotate(273deg);
+}
+.Copyright hr {
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+.Copyright p {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+.Copyright a {
+	color: #fff;
+	font-size: 15px;
+}
+.Leftpayment {
+	margin-left: 20%;
+	text-align: center;
+}
+
+.Payment img {
+	width: 55px;
+	height: 30px;
+}
+
+/* Footer Area Design End  */
+
+@media all and (max-width: 1199px) {
+	.card {
+		margin-top: 20px;
+		width: 19rem !important;
+	}
+}
+@media all and (max-width: 991px) {
+	.card {
+		margin-top: 20px;
+		width: 14rem !important;
+	}
+	.BigPadding {
+		padding-top: 10px !important;
+	}
+}
+@media all and (max-width: 768px) {
+	.AboutBox {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.FooterParagraph {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.AboutBox > img {
+		width: 100%;
+	}
+
+	.card {
+		margin: 10px auto;
+		width: 20rem !important;
+	}
+	.HeroSection {
+		height: auto;
+	}
+	.country-8 {
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+	}
+	.country-5 {
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+	}
+	.country-3 {
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+	}
+	.country-6 {
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+	}
+	.destination-map ul.pointers li:after {
+		display: none !important;
+	}
+	.pointers {
+		padding-left: 5rem;
+	}
+	.cta {
+		margin-top: 50px;
+		margin-left: 0%;
+		width: 55%;
+	}
+	.HiddenSm {
+		display: none;
+	}
+	.SignBtn {
+		margin-left: 0px !important;
+	}
+}
