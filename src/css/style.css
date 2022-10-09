@@ -132,6 +132,10 @@ h6.heading {
   color: #000 !important;
 }
 
+.color-white {
+  color: #fff !important;
+}
+
 .color-primary {
   color: #fd8a52 !important;
 }
@@ -3420,6 +3424,14 @@ a:hover {
 }
 .ames-villas .HeroSection {
   height: 60vh !important;
+}
+@media only screen and (max-width: 48em) {
+  .ames-villas .HeroSection {
+    height: 80vh !important;
+  }
+}
+.ames-villas .FooterSocial {
+  flex-wrap: wrap;
 }
 
 .page .FooterColor h2,

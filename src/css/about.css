@@ -38,14 +38,15 @@ li {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
 }
+
 .HeroBox img {
 	width: 40px;
 	height: 40px;
 }
 .HeroBox h1 {
 	font-size: 35px;
+	color: #fff;
 }
 .HeroBox p {
 	font-size: 16px;
@@ -350,6 +351,14 @@ li {
 	}
 }
 @media all and (max-width: 768px) {
+	.HeroBox .row {
+		width: 100%;
+	}
+
+	.HeroBox .row div {
+		margin: o auto !important;
+	}
+
 	.AboutBox {
 		display: flex;
 		flex-direction: column;

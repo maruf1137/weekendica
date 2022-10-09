@@ -924,6 +924,14 @@
 
 	.HeroSection {
 		height: 60vh !important;
+
+		@media only screen and (max-width: $tab-port) {
+			height: 80vh !important;
+		}
+	}
+
+	.FooterSocial {
+		flex-wrap: wrap;
 	}
 }
 .page {
