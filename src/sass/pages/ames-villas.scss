@@ -197,7 +197,7 @@
 
 		&__item {
 			&:not(:last-child) {
-				border-right: 1px solid red;
+				border-right: 1px solid #eee;
 
 				@media only screen and (max-width: $tab-port) {
 					border: none;
@@ -399,6 +399,9 @@
 				height: 0;
 				overflow: hidden;
 			}
+			@media only screen and (min-width: 62em) {
+				padding: 0 !important;
+			}
 		}
 		&__item {
 			background-color: $color-white;
@@ -456,12 +459,13 @@
 			&--wrapper {
 				position: absolute;
 				background: $color-white;
-				z-index: 2;
+				z-index: 10;
 				padding: 1rem;
 				width: 36rem;
 				opacity: 0;
 				visibility: hidden;
 				transition: all 0.3s;
+				box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 				.text {
 					color: $color-black;
@@ -475,7 +479,7 @@
 				height: 100%;
 				width: 100%;
 				background-color: rgba(0, 0, 0, 0);
-				z-index: 1;
+				z-index: 10;
 				opacity: 0;
 				visibility: hidden;
 				transition: all 0.3s;
@@ -591,14 +595,14 @@
 				height: 100%;
 				width: 100%;
 				background-color: rgba(0, 0, 0, 0);
-				z-index: 1;
+				z-index: 10;
 				display: none;
 			}
 
 			&__content {
 				width: 60vw;
 				position: absolute;
-				z-index: 1;
+				z-index: 10;
 				left: 50%;
 				transform: translateX(-50%);
 				margin-top: 1rem;
@@ -735,7 +739,7 @@
 					background-color: rgba(0, 0, 0, 0);
 					height: 100%;
 					width: 100%;
-					z-index: 1;
+					z-index: 10;
 					display: none;
 				}
 			}
@@ -792,7 +796,7 @@
 				padding: 2rem;
 				position: absolute;
 				top: 6rem;
-				z-index: 1;
+				z-index: 10;
 				width: 100%;
 				box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 				display: none;
@@ -886,5 +890,46 @@
 		width: 100%;
 		z-index: 100;
 		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	}
+
+	.Feedback {
+		height: auto;
+		position: fixed;
+		top: 50%;
+		right: 1rem;
+		padding: 1rem 0px;
+		z-index: 3;
+		margin: 0;
+
+		@media only screen and (max-width: $mbl-land) {
+			display: none;
+		}
+	}
+
+	.SliderBox {
+		position: relative;
+	}
+
+	.SliderText {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.HeroSection {
+		height: 60vh !important;
+	}
+}
+.page {
+	.FooterColor,
+	.search {
+		h2,
+		h3,
+		h4,
+		h5,
+		p,
+		.text {
+			color: #fff !important;
+		}
 	}
 }

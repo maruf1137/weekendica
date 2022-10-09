@@ -570,19 +570,19 @@ section.destination-map {
 @media all and (max-width: 1199px) {
 	.card {
 		margin-top: 20px;
-		width: 19rem !important;
+		/* width: 19rem !important; */
 	}
 }
 @media all and (max-width: 991px) {
 	.card {
 		margin-top: 20px;
-		width: 14rem !important;
+		/* width: 14rem !important; */
 	}
 }
 @media all and (max-width: 768px) {
 	.card {
 		margin: 10px auto;
-		width: 20rem !important;
+		/* width: 20rem !important; */
 	}
 	.HeroSection {
 		height: auto;

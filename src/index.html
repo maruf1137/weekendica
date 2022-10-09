@@ -156,7 +156,10 @@
 				</nav>
 				<!-- navbar end -->
 
-				<div class="container">
+				<div
+					class="container d-flex justify-content-center align-items-center"
+					style="height: 80vh"
+				>
 					<div class="header__content center">
 						<h1 class="heading mb-2">Iznajmite vikendicu iz snova.</h1>
 						<p class="text mb-4">
@@ -170,22 +173,15 @@
 								class="search__form d-flex justify-content-between align-items-center"
 							>
 								<!-- dropdoen 1 -->
-								<div class="dropdown show">
-									<a
-										class="btn btn-secondary dropdown-toggle"
-										href="#"
-										role="button"
-										id="dropdownMenuLink"
-										data-toggle="dropdown"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
+								<div class="dropdown1 dropdown">
+									<button class="dropdown__btn d-flex justify-content-between align-items-center">
 										<span class="text">Izaberite odliku lokacije</span>
 										<i class="bi bi-chevron-down"></i>
-									</a>
+									</button>
 
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<div class="dropdown-content">
+									<div class="overlay-1 overlay"></div>
+									<div class="dropdown__list">
+										<div class="dropdown__content">
 											<a class="dropdown-item" href="#">Blizu gradskog prevoza</a>
 											<a class="dropdown-item" href="#">Do 10km od centra grada</a>
 											<a class="dropdown-item" href="#">Do 30km od centra grada</a>
@@ -206,21 +202,15 @@
 								</div>
 
 								<!-- dropdoen 2 calender -->
-								<div class="dropdown show">
-									<a
-										class="btn btn-secondary dropdown-toggle"
-										href="#"
-										role="button"
-										id="dropdownMenuLink"
-										data-toggle="dropdown"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
+
+								<div class="dropdown2 dropdown">
+									<button class="dropdown__btn d-flex justify-content-between align-items-center">
 										<span class="text">06-10-2022</span>
 										<i class="bi bi-chevron-down"></i>
-									</a>
+									</button>
 
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									<div class="overlay-2 overlay"></div>
+									<div class="dropdown__list">
 										<div class="wrapper">
 											<div class="container-calendar">
 												<div

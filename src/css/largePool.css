@@ -260,7 +260,7 @@ section.destination-map {
 	width: 160px;
 	height: 65px;
 	background-color: #fff;
-	margin-top: 39%;
+	/* margin-top: 39%; */
 }
 .SliderText p {
 	font-size: 16px;
@@ -570,23 +570,24 @@ section.destination-map {
 @media all and (max-width: 1199px) {
 	.card {
 		margin-top: 20px;
-		width: 19rem !important;
+		width: 100% !important;
 	}
 }
 @media all and (max-width: 991px) {
 	.card {
 		margin-top: 20px;
-		width: 14rem !important;
+		width: 100% !important;
 	}
 }
 @media all and (max-width: 768px) {
 	.card {
 		margin: 10px auto;
-		width: 20rem !important;
+		/* width: 20rem !important; */
+		width: 100% !important;
 	}
-	.HeroSection {
+	/* .HeroSection {
 		height: auto;
-	}
+	} */
 	.country-8 {
 		margin-left: 0px !important;
 		margin-top: 0px !important;
@@ -626,7 +627,7 @@ section.destination-map {
 		width: 160px;
 		height: 65px;
 		background-color: #fff;
-		margin-top: 43%;
+		margin-top: 0;
 	}
 }
 @media all and (max-width: 566px) {
@@ -634,7 +635,7 @@ section.destination-map {
 		width: 160px;
 		height: 65px;
 		background-color: #fff;
-		margin-top: 50%;
+		/* margin-top: 50%; */
 	}
 }
 
@@ -643,7 +644,7 @@ section.destination-map {
 		width: 160px;
 		height: 65px;
 		background-color: #fff;
-		margin-top: 57%;
+		/* margin-top: 57%; */
 		padding: 5px;
 	}
 }

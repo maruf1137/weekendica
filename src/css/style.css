@@ -25,6 +25,16 @@ body {
 .section {
   padding: 10rem 0;
 }
+@media only screen and (max-width: 62em) {
+  .section {
+    padding: 8rem 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .section {
+    padding: 5rem 0;
+  }
+}
 
 .container {
   max-width: 132rem !important;
@@ -1120,6 +1130,11 @@ a:hover {
   background-color: transparent;
   position: relative;
 }
+@media only screen and (max-width: 62em) {
+  .nav {
+    padding: 2rem;
+  }
+}
 .nav__logo {
   height: 5rem;
   width: 30rem;
@@ -1194,14 +1209,13 @@ a:hover {
 .nav__btns {
   gap: 1rem;
 }
-
-.dropdown__btn {
+.nav .dropdown__btn {
   gap: 1rem;
 }
-.dropdown__btn i {
+.nav .dropdown__btn i {
   font-size: 1.2rem;
 }
-.dropdown__content {
+.nav .dropdown__content {
   gap: 1.5rem;
   padding: 2rem;
   background-color: #fff;
@@ -1214,19 +1228,58 @@ a:hover {
   transform: scale(0.6);
   transition: all 0.3s;
 }
-.dropdown__link {
+.nav .dropdown__link {
   text-decoration: none;
   color: #000;
   display: block;
 }
-.dropdown__link:hover {
+.nav .dropdown__link:hover {
   color: #000;
 }
-
-.dropdown:hover .dropdown__content {
+.nav .dropdown:hover .dropdown__content {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+.nav .HeaderLogo {
+  color: #2c2c2c;
+  font-size: 12px;
+}
+.nav nav {
+  height: 40px;
+  padding: 10px;
+}
+.nav .nav-link {
+  font-size: 13px;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+.nav .VrArea {
+  color: #d5d3d3;
+  height: 20px !important;
+  width: 1px;
+}
+.nav .dropdown-toggle {
+  font-size: 13px;
+  color: #2c2c2c !important;
+  font-weight: 500 !important;
+  margin-right: 20px;
+}
+.nav .navbar .HeaderLogo:hover {
+  color: #fd8a52;
+}
+.nav svg:hover path {
+  fill: #fd8a52;
+  transition: all ease 0.3s;
+}
+.nav .Logo1 img {
+  margin-top: -13px;
+  margin-left: 20px;
+}
+@media all and (max-width: 767px) {
+  .nav .DisplayNoneMD {
+    display: none;
+  }
 }
 
 .mblNav {
@@ -1261,54 +1314,6 @@ a:hover {
   font-weight: 500;
 }
 
-.HeaderLogo {
-  color: #2c2c2c;
-  font-size: 12px;
-}
-
-nav {
-  height: 40px;
-  padding: 10px;
-}
-
-.nav-link {
-  font-size: 13px;
-  color: #2c2c2c;
-  font-weight: 500;
-}
-
-.VrArea {
-  color: #d5d3d3;
-  height: 20px !important;
-  width: 1px;
-}
-
-.dropdown-toggle {
-  font-size: 13px;
-  color: #2c2c2c !important;
-  font-weight: 500 !important;
-  margin-right: 20px;
-}
-
-.navbar .HeaderLogo:hover {
-  color: #fd8a52;
-}
-
-svg:hover path {
-  fill: #fd8a52;
-  transition: all ease 0.3s;
-}
-
-.Logo1 img {
-  margin-top: -13px;
-  margin-left: 20px;
-}
-
-@media all and (max-width: 767px) {
-  .DisplayNoneMD {
-    display: none;
-  }
-}
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-hero.jpg");
   background-position: center center;
@@ -1319,10 +1324,6 @@ svg:hover path {
   position: relative;
 }
 .header__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   width: 95%;
 }
@@ -1339,13 +1340,30 @@ svg:hover path {
   border-radius: 10rem;
   padding: 0 2rem;
 }
+@media only screen and (max-width: 62em) {
+  .header .search {
+    border-radius: 2rem;
+    padding: 0;
+  }
+}
 .header .search__form {
   gap: 0.4rem;
+}
+@media only screen and (max-width: 62em) {
+  .header .search__form {
+    flex-direction: column;
+  }
 }
 .header .search .dropdown {
   width: 100%;
 }
-.header .search .dropdown .btn {
+@media only screen and (max-width: 62em) {
+  .header .search .dropdown {
+    border-bottom: 1px solid #eee;
+  }
+}
+.header .search .dropdown .btn,
+.header .search .dropdown button {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1356,23 +1374,47 @@ svg:hover path {
   background-color: transparent;
   color: #000;
 }
-.header .search .dropdown .btn:focus, .header .search .dropdown .btn:active {
+.header .search .dropdown .btn:focus, .header .search .dropdown .btn:active,
+.header .search .dropdown button:focus,
+.header .search .dropdown button:active {
   border: none;
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0);
 }
-.header .search .dropdown .btn::after {
+.header .search .dropdown .btn::after,
+.header .search .dropdown button::after {
   display: none;
 }
 .header .search .dropdown .btn i,
-.header .search .dropdown .btn .text {
+.header .search .dropdown .btn .text,
+.header .search .dropdown button i,
+.header .search .dropdown button .text {
   color: #000;
 }
-.header .search .dropdown-menu {
-  width: 100%;
-  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+@media only screen and (max-width: 62em) {
+  .header .search .dropdown .btn,
+.header .search .dropdown button {
+    padding: 1.5rem 2.5rem;
+  }
 }
-.header .search .dropdown-content {
+.header .search .dropdown__list {
+  width: 100%;
+  background: white;
+  position: absolute;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: none;
+  z-index: 3;
+}
+@media only screen and (max-width: 62em) {
+  .header .search .dropdown__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+  }
+}
+.header .search .dropdown__content {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -1392,6 +1434,11 @@ svg:hover path {
   justify-content: end;
   align-items: center;
 }
+@media only screen and (max-width: 62em) {
+  .header .search .dropdown-btn {
+    justify-content: center;
+  }
+}
 .header .search .dropdown-btn .btn {
   background-color: #000;
   color: #fff;
@@ -1399,6 +1446,9 @@ svg:hover path {
   width: auto;
   padding: 1rem 3rem;
   border-radius: 10rem;
+}
+.header .search .dropdown2 .dropdown__list {
+  width: 45vw;
 }
 .header .search__input {
   width: 100%;
@@ -1417,6 +1467,12 @@ svg:hover path {
   color: #000;
   font-weight: 600;
 }
+@media only screen and (max-width: 62em) {
+  .header .search__input {
+    padding: 1.4rem 2.5rem;
+    border-bottom: 1px solid #eee;
+  }
+}
 .header .search .btn__submit {
   padding: 0;
   height: 5rem;
@@ -1429,9 +1485,25 @@ svg:hover path {
     width: 20%;
   }
 }
+@media only screen and (max-width: 62em) {
+  .header .search .btn__submit {
+    width: 98%;
+    margin: 1rem;
+  }
+}
 .header .search .btn__submit i {
   color: #fff;
   font-weight: 700;
+}
+.header .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.234);
+  z-index: 2;
+  display: none;
 }
 
 .footer h5,
@@ -1971,6 +2043,7 @@ svg:hover path {
   padding: 5px;
   text-align: center;
   vertical-align: top;
+  color: #000;
 }
 .wrapper .date-picker.selected {
   font-weight: bold;
@@ -2144,6 +2217,7 @@ svg:hover path {
   .submit-request-page .submit-section .submit__card,
 .en-gb-page .submit-section .submit__card {
     padding: 1.5rem;
+    margin-top: 0;
   }
 }
 .submit-request-page .submit-section .submit__card h3,
@@ -2727,7 +2801,7 @@ svg:hover path {
   }
 }
 .ames-villas .navTop__item:not(:last-child) {
-  border-right: 1px solid red;
+  border-right: 1px solid #eee;
 }
 @media only screen and (max-width: 48em) {
   .ames-villas .navTop__item:not(:last-child) {
@@ -2896,6 +2970,11 @@ svg:hover path {
     overflow: hidden;
   }
 }
+@media only screen and (min-width: 62em) {
+  .ames-villas .search__form {
+    padding: 0 !important;
+  }
+}
 .ames-villas .search__item {
   background-color: #fff;
   padding: 0;
@@ -2941,12 +3020,13 @@ svg:hover path {
 .ames-villas .search__dropdown--wrapper {
   position: absolute;
   background: #fff;
-  z-index: 2;
+  z-index: 10;
   padding: 1rem;
   width: 36rem;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .ames-villas .search__dropdown--wrapper .text {
   color: #000;
@@ -2959,7 +3039,7 @@ svg:hover path {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -3052,13 +3132,13 @@ svg:hover path {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
+  z-index: 10;
   display: none;
 }
 .ames-villas .search .calender-dropdown__content {
   width: 60vw;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
@@ -3174,7 +3254,7 @@ svg:hover path {
   background-color: rgba(0, 0, 0, 0);
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   display: none;
 }
 .ames-villas .search .people .btn-people-dropdwon {
@@ -3225,7 +3305,7 @@ svg:hover path {
   padding: 2rem;
   position: absolute;
   top: 6rem;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   display: none;
@@ -3300,6 +3380,46 @@ svg:hover path {
   width: 100%;
   z-index: 100;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.ames-villas .Feedback {
+  height: auto;
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+  padding: 1rem 0px;
+  z-index: 3;
+  margin: 0;
+}
+@media only screen and (max-width: 35.9375em) {
+  .ames-villas .Feedback {
+    display: none;
+  }
+}
+.ames-villas .SliderBox {
+  position: relative;
+}
+.ames-villas .SliderText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ames-villas .HeroSection {
+  height: 60vh !important;
+}
+
+.page .FooterColor h2,
+.page .FooterColor h3,
+.page .FooterColor h4,
+.page .FooterColor h5,
+.page .FooterColor p,
+.page .FooterColor .text,
+.page .search h2,
+.page .search h3,
+.page .search h4,
+.page .search h5,
+.page .search p,
+.page .search .text {
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

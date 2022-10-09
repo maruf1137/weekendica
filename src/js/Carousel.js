@@ -1,6 +1,6 @@
 // Swiper Configuration
 var swiper = new Swiper('.swiper-container', {
-	slidesPerView: 1,
+	slidesPerView: 4,
 	spaceBetween: 30,
 	centeredSlides: true,
 	freeMode: true,
@@ -20,16 +20,13 @@ var swiper = new Swiper('.swiper-container', {
 	},
 	breakpoints: {
 		991: {
-			slidesPerView: 0.6,
+			slidesPerView: 3,
 		},
-		767: {
-			slidesPerView: 0.4,
+		575: {
+			slidesPerView: 2,
 		},
-		500: {
-			slidesPerView: 0.5,
-		},
-		700: {
-			slidesPerView: 0.5,
+		400: {
+			slidesPerView: 1,
 		},
 	},
 });

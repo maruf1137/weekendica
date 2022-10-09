@@ -97,3 +97,13 @@ openSidebar.addEventListener('click', () => {
 closeSidebar.addEventListener('click', () => {
 	navList.classList.remove('show');
 });
+
+// dropdown
+const dropdownBtn = document.querySelectorAll('.dropdown__btn');
+const dropdown = document.querySelectorAll('.search .dropdown');
+const closeDropdownBtn = document.querySelector('.dropdown1 .btn-dropdown');
+const overlay = document.querySelectorAll('.overlay');
+
+dropdown.forEach((dropdown) => {
+	// const btn = dropdown.querySelector();
+});

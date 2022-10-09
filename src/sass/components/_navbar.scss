@@ -2,11 +2,10 @@
 	padding: 3rem 4rem;
 	background-color: transparent;
 	position: relative;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// width: 100%;
-	// z-index: 2;
+
+	@media only screen and (max-width: $tab-land) {
+		padding: 2rem;
+	}
 
 	&__logo {
 		height: 5rem;
@@ -85,49 +84,94 @@
 	&__btns {
 		gap: 1rem;
 	}
-}
 
-.dropdown {
-	// display: flex;
-	// flex-direction: column;
-	// gap: 4rem;
+	.dropdown {
+		// display: flex;
+		// flex-direction: column;
+		// gap: 4rem;
 
-	&__btn {
-		gap: 1rem;
+		&__btn {
+			gap: 1rem;
 
-		i {
-			font-size: 1.2rem;
+			i {
+				font-size: 1.2rem;
+			}
 		}
-	}
-	&__content {
-		gap: 1.5rem;
-		padding: 2rem;
-		background-color: $color-white;
-		position: absolute;
-		top: 2rem;
-		width: auto;
-		min-width: 25rem;
-		opacity: 0;
-		visibility: hidden;
-		transform: scale(0.6);
-		transition: all 0.3s;
-		// margin-top: 2rem;
-	}
-	&__link {
-		text-decoration: none;
-		color: $color-black;
-		display: block;
-
-		&:hover {
+		&__content {
+			gap: 1.5rem;
+			padding: 2rem;
+			background-color: $color-white;
+			position: absolute;
+			top: 2rem;
+			width: auto;
+			min-width: 25rem;
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(0.6);
+			transition: all 0.3s;
+			// margin-top: 2rem;
+		}
+		&__link {
+			text-decoration: none;
 			color: $color-black;
+			display: block;
+
+			&:hover {
+				color: $color-black;
+			}
 		}
 	}
-}
 
-.dropdown:hover .dropdown__content {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1);
+	.dropdown:hover .dropdown__content {
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+
+	.HeaderLogo {
+		color: #2c2c2c;
+		font-size: 12px;
+	}
+	nav {
+		height: 40px;
+		padding: 10px;
+	}
+	.nav-link {
+		font-size: 13px;
+		color: #2c2c2c;
+		font-weight: 500;
+	}
+
+	.VrArea {
+		color: #d5d3d3;
+		height: 20px !important;
+		width: 1px;
+	}
+
+	.dropdown-toggle {
+		font-size: 13px;
+		color: #2c2c2c !important;
+		font-weight: 500 !important;
+		margin-right: 20px;
+	}
+
+	.navbar .HeaderLogo:hover {
+		color: #fd8a52;
+	}
+	svg:hover path {
+		fill: #fd8a52;
+		transition: all ease 0.3s;
+	}
+	.Logo1 img {
+		margin-top: -13px;
+		margin-left: 20px;
+	}
+
+	@media all and (max-width: 767px) {
+		.DisplayNoneMD {
+			display: none;
+		}
+	}
 }
 
 .mblNav {
@@ -168,50 +212,5 @@
 			font-size: 1.2rem;
 			font-weight: 500;
 		}
-	}
-}
-
-.HeaderLogo {
-	color: #2c2c2c;
-	font-size: 12px;
-}
-nav {
-	height: 40px;
-	padding: 10px;
-}
-.nav-link {
-	font-size: 13px;
-	color: #2c2c2c;
-	font-weight: 500;
-}
-
-.VrArea {
-	color: #d5d3d3;
-	height: 20px !important;
-	width: 1px;
-}
-
-.dropdown-toggle {
-	font-size: 13px;
-	color: #2c2c2c !important;
-	font-weight: 500 !important;
-	margin-right: 20px;
-}
-
-.navbar .HeaderLogo:hover {
-	color: #fd8a52;
-}
-svg:hover path {
-	fill: #fd8a52;
-	transition: all ease 0.3s;
-}
-.Logo1 img {
-	margin-top: -13px;
-	margin-left: 20px;
-}
-
-@media all and (max-width: 767px) {
-	.DisplayNoneMD {
-		display: none;
 	}
 }
