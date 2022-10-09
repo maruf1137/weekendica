@@ -57,6 +57,11 @@ h1.heading {
   color: #fff;
   font-family: "Jost", sans-serif;
 }
+@media only screen and (max-width: 48em) {
+  h1.heading {
+    font-size: 4.5rem;
+  }
+}
 
 h2.heading {
   font-size: 3.5rem;
@@ -3398,6 +3403,7 @@ a:hover {
   padding: 1rem 0px;
   z-index: 3;
   margin: 0;
+  border: none;
 }
 @media only screen and (max-width: 35.9375em) {
   .ames-villas .Feedback {

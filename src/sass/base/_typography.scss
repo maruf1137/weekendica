@@ -3,6 +3,10 @@ h1.heading {
 	font-weight: 700;
 	color: $color-white;
 	font-family: $font-primary;
+
+	@media only screen and (max-width: $tab-port) {
+		font-size: 4.5rem;
+	}
 }
 h2.heading {
 	font-size: 3.5rem;
