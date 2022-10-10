@@ -3511,11 +3511,13 @@ a:hover {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  width: 95%;
   flex-wrap: wrap;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px 10px 10px 50px;
   border-radius: 0.4rem;
+  max-width: 70rem;
 }
 .destinations-page .text {
   color: #fff;
@@ -3719,7 +3721,7 @@ a:hover {
 }
 .destinations-page .villas-section .villas {
   padding: 1rem 0;
-  border: 1px solid #000;
+  border: 1px solid rgba(175, 175, 175, 0.5960784314);
   margin-bottom: 2rem;
 }
 .destinations-page .villas-section .villas__item {
@@ -3778,7 +3780,7 @@ a:hover {
 }
 .destinations-page .villas-section .villas .desc {
   position: relative;
-  border-right: 1px solid #000;
+  border-right: 1px solid rgba(175, 175, 175, 0.5960784314);
   padding-right: 1.5rem;
 }
 @media only screen and (max-width: 48em) {
