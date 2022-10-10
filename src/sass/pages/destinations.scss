@@ -1,4 +1,8 @@
 .destinations-page {
+	.section {
+		padding: 4rem 0 !important;
+	}
+
 	&__nav {
 		padding: 1rem 10rem;
 		gap: 0.5rem;
@@ -314,6 +318,373 @@
 					button i {
 						color: $color-secondary;
 					}
+				}
+			}
+		}
+	}
+
+	.btn {
+		border: 1px solid $color-secondary;
+		padding: 0.6rem 2rem;
+		border-radius: 0.5rem;
+
+		i,
+		.text {
+			color: $color-secondary;
+			transition: all 0.3s;
+			text-transform: capitalize;
+		}
+
+		&:hover {
+			background-color: $color-secondary;
+			i,
+			.text {
+				color: white;
+			}
+		}
+	}
+
+	.villas-section {
+		a {
+			text-decoration: none;
+		}
+
+		.villas {
+			padding: 1rem 0;
+			border: 1px solid #000;
+			margin-bottom: 2rem;
+
+			&__item {
+				// border: 1px solid red;
+				height: 100%;
+				width: 100%;
+			}
+
+			.slider {
+				height: 25rem;
+				width: 100%;
+				cursor: pointer;
+				transition: all 0.3s;
+
+				&:hover {
+					.swiper-button-next,
+					.swiper-button-prev {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				.swiper {
+					height: 100%;
+				}
+
+				.swiper-slide {
+					height: 100%;
+					width: 100%;
+				}
+
+				&__img {
+					@include img-size;
+
+					img {
+						@include img-size;
+					}
+				}
+
+				.swiper-pagination {
+					color: #fff;
+
+					span {
+						color: #fff;
+					}
+				}
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					z-index: 3;
+					opacity: 0;
+					visibility: hidden;
+					z-index: 1;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 3.5rem;
+					width: 3.5rem;
+					transition: all 0.3s;
+					background: rgba(1, 1, 1, 0.4);
+
+					i {
+						color: #fff;
+					}
+				}
+			}
+
+			.desc {
+				position: relative;
+				border-right: 1px solid #000;
+				padding-right: 1.5rem;
+
+				@media only screen and (max-width: $tab-port) {
+					border-right: none;
+				}
+
+				h3 {
+					font-size: 2.2rem;
+				}
+
+				.text {
+					color: #000;
+				}
+
+				.review {
+					&__stars {
+						gap: 0.4rem;
+						margin-right: 0.5rem;
+
+						.btn-star {
+							border: none;
+							outline: none;
+							background-color: transparent;
+
+							i {
+								color: #ffd000;
+							}
+						}
+					}
+
+					&__number {
+						margin-right: 0.8rem;
+					}
+
+					img {
+						height: 1.5rem;
+					}
+				}
+
+				&__icons {
+				}
+				&__icon {
+					align-items: center;
+
+					i {
+						font-size: 3rem;
+						color: rgba(51, 51, 51, 0.621);
+					}
+
+					.text {
+						color: #000;
+					}
+				}
+
+				.btn-wishlist {
+					border: 1px solid $color-secondary;
+					padding: 0.6rem 2rem;
+					border-radius: 0.5rem;
+					position: absolute;
+					top: 0;
+					right: 1.5rem;
+
+					i,
+					.text {
+						color: $color-secondary;
+						transition: all 0.3s;
+						text-transform: capitalize;
+					}
+
+					&:hover {
+						background-color: $color-secondary;
+						i,
+						.text {
+							color: white;
+						}
+					}
+				}
+			}
+
+			.price {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				background-color: #f0f0f0;
+				padding: 0.8rem 1.5rem;
+				gap: 2rem;
+
+				.text {
+					text-transform: capitalize;
+				}
+
+				&__main {
+					.text {
+						color: #000;
+					}
+
+					h2 {
+						color: #003865;
+					}
+
+					.pp {
+						color: #003865;
+					}
+				}
+
+				&__total {
+					.text {
+						color: #003865;
+						font-weight: 600;
+					}
+
+					.price-number {
+						color: #003865;
+						font-weight: 600;
+					}
+				}
+
+				&__date {
+					i,
+					.text {
+						color: #000;
+					}
+				}
+
+				.btn-details {
+					background-color: $color-secondary;
+					color: #fff;
+					text-transform: capitalize;
+
+					&:hover {
+						background-color: transparent;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+
+	.accordion-section {
+		.accordion {
+			max-width: 70rem;
+			width: 100%;
+
+			h2 {
+				button {
+					font-size: 1.8rem;
+				}
+			}
+
+			&-collapse {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.villa {
+		&__list {
+			height: 26rem;
+
+			.swiper {
+				height: 100%;
+			}
+		}
+
+		&__item {
+			height: 22rem;
+			width: 100%;
+		}
+
+		&__img {
+			height: 90%;
+			width: 100%;
+
+			img {
+				@include img-size;
+			}
+		}
+
+		&__text {
+			font-weight: 600;
+		}
+	}
+
+	.popular-section {
+		.villa {
+			&__item {
+				position: relative;
+			}
+
+			&__text {
+				width: 100%;
+				position: absolute;
+				bottom: 3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				text-align: center;
+				color: #fff;
+			}
+		}
+	}
+
+	.recommends-section {
+		.villa {
+			&__item {
+				position: relative;
+				filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+			}
+
+			&__text {
+				width: 14rem;
+				min-height: 6rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-items: center;
+				position: absolute;
+				bottom: 2rem;
+				left: 0;
+				background-color: #fff;
+				padding: 1rem;
+				text-align: center;
+
+				.text {
+					color: #000;
+					font-size: 1.6rem;
+					font-weight: 400;
+				}
+
+				.title {
+					font-size: 2.4rem;
+					font-weight: 400;
+					color: #000;
+				}
+			}
+		}
+	}
+
+	.newVillas-section {
+		padding: 4rem 0;
+		background-color: #f5f5f5;
+
+		.villa {
+			&__list {
+				height: auto;
+			}
+
+			&__item {
+				position: relative;
+				filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+			}
+
+			&__img {
+				height: 100%;
+			}
+
+			&__text {
+				position: absolute;
+				bottom: 1rem;
+				left: 50%;
+				transform: translateX(-50%);
+
+				span {
+					color: #fff;
 				}
 			}
 		}

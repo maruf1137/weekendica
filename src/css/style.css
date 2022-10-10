@@ -3442,6 +3442,9 @@ a:hover {
   color: #fff !important;
 }
 
+.destinations-page .section {
+  padding: 4rem 0 !important;
+}
 .destinations-page__nav {
   padding: 1rem 10rem;
   gap: 0.5rem;
@@ -3692,6 +3695,286 @@ a:hover {
 }
 .destinations-page .destinations-section .destinations__link:hover button i {
   color: #fd8a52;
+}
+.destinations-page .btn {
+  border: 1px solid #fd8a52;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+}
+.destinations-page .btn i,
+.destinations-page .btn .text {
+  color: #fd8a52;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.destinations-page .btn:hover {
+  background-color: #fd8a52;
+}
+.destinations-page .btn:hover i,
+.destinations-page .btn:hover .text {
+  color: white;
+}
+.destinations-page .villas-section a {
+  text-decoration: none;
+}
+.destinations-page .villas-section .villas {
+  padding: 1rem 0;
+  border: 1px solid #000;
+  margin-bottom: 2rem;
+}
+.destinations-page .villas-section .villas__item {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .villas-section .villas .slider {
+  height: 25rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.destinations-page .villas-section .villas .slider:hover .swiper-button-next,
+.destinations-page .villas-section .villas .slider:hover .swiper-button-prev {
+  opacity: 1;
+  visibility: visible;
+}
+.destinations-page .villas-section .villas .slider .swiper {
+  height: 100%;
+}
+.destinations-page .villas-section .villas .slider .swiper-slide {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .villas-section .villas .slider__img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .villas-section .villas .slider__img img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .villas-section .villas .slider .swiper-pagination {
+  color: #fff;
+}
+.destinations-page .villas-section .villas .slider .swiper-pagination span {
+  color: #fff;
+}
+.destinations-page .villas-section .villas .slider .swiper-button-next,
+.destinations-page .villas-section .villas .slider .swiper-button-prev {
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  transition: all 0.3s;
+  background: rgba(1, 1, 1, 0.4);
+}
+.destinations-page .villas-section .villas .slider .swiper-button-next i,
+.destinations-page .villas-section .villas .slider .swiper-button-prev i {
+  color: #fff;
+}
+.destinations-page .villas-section .villas .desc {
+  position: relative;
+  border-right: 1px solid #000;
+  padding-right: 1.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .destinations-page .villas-section .villas .desc {
+    border-right: none;
+  }
+}
+.destinations-page .villas-section .villas .desc h3 {
+  font-size: 2.2rem;
+}
+.destinations-page .villas-section .villas .desc .text {
+  color: #000;
+}
+.destinations-page .villas-section .villas .desc .review__stars {
+  gap: 0.4rem;
+  margin-right: 0.5rem;
+}
+.destinations-page .villas-section .villas .desc .review__stars .btn-star {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.destinations-page .villas-section .villas .desc .review__stars .btn-star i {
+  color: #ffd000;
+}
+.destinations-page .villas-section .villas .desc .review__number {
+  margin-right: 0.8rem;
+}
+.destinations-page .villas-section .villas .desc .review img {
+  height: 1.5rem;
+}
+.destinations-page .villas-section .villas .desc__icon {
+  align-items: center;
+}
+.destinations-page .villas-section .villas .desc__icon i {
+  font-size: 3rem;
+  color: rgba(51, 51, 51, 0.621);
+}
+.destinations-page .villas-section .villas .desc__icon .text {
+  color: #000;
+}
+.destinations-page .villas-section .villas .desc .btn-wishlist {
+  border: 1px solid #fd8a52;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+}
+.destinations-page .villas-section .villas .desc .btn-wishlist i,
+.destinations-page .villas-section .villas .desc .btn-wishlist .text {
+  color: #fd8a52;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.destinations-page .villas-section .villas .desc .btn-wishlist:hover {
+  background-color: #fd8a52;
+}
+.destinations-page .villas-section .villas .desc .btn-wishlist:hover i,
+.destinations-page .villas-section .villas .desc .btn-wishlist:hover .text {
+  color: white;
+}
+.destinations-page .villas-section .villas .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 0.8rem 1.5rem;
+  gap: 2rem;
+}
+.destinations-page .villas-section .villas .price .text {
+  text-transform: capitalize;
+}
+.destinations-page .villas-section .villas .price__main .text {
+  color: #000;
+}
+.destinations-page .villas-section .villas .price__main h2 {
+  color: #003865;
+}
+.destinations-page .villas-section .villas .price__main .pp {
+  color: #003865;
+}
+.destinations-page .villas-section .villas .price__total .text {
+  color: #003865;
+  font-weight: 600;
+}
+.destinations-page .villas-section .villas .price__total .price-number {
+  color: #003865;
+  font-weight: 600;
+}
+.destinations-page .villas-section .villas .price__date i,
+.destinations-page .villas-section .villas .price__date .text {
+  color: #000;
+}
+.destinations-page .villas-section .villas .price .btn-details {
+  background-color: #fd8a52;
+  color: #fff;
+  text-transform: capitalize;
+}
+.destinations-page .villas-section .villas .price .btn-details:hover {
+  background-color: transparent;
+  color: #000;
+}
+.destinations-page .accordion-section .accordion {
+  max-width: 70rem;
+  width: 100%;
+}
+.destinations-page .accordion-section .accordion h2 button {
+  font-size: 1.8rem;
+}
+.destinations-page .accordion-section .accordion-collapse {
+  font-size: 1.6rem;
+}
+.destinations-page .villa__list {
+  height: 26rem;
+}
+.destinations-page .villa__list .swiper {
+  height: 100%;
+}
+.destinations-page .villa__item {
+  height: 22rem;
+  width: 100%;
+}
+.destinations-page .villa__img {
+  height: 90%;
+  width: 100%;
+}
+.destinations-page .villa__img img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .villa__text {
+  font-weight: 600;
+}
+.destinations-page .popular-section .villa__item {
+  position: relative;
+}
+.destinations-page .popular-section .villa__text {
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+.destinations-page .recommends-section .villa__item {
+  position: relative;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+}
+.destinations-page .recommends-section .villa__text {
+  width: 14rem;
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+.destinations-page .recommends-section .villa__text .text {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.destinations-page .recommends-section .villa__text .title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #000;
+}
+.destinations-page .newVillas-section {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+.destinations-page .newVillas-section .villa__list {
+  height: auto;
+}
+.destinations-page .newVillas-section .villa__item {
+  position: relative;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+}
+.destinations-page .newVillas-section .villa__img {
+  height: 100%;
+}
+.destinations-page .newVillas-section .villa__text {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.destinations-page .newVillas-section .villa__text span {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
