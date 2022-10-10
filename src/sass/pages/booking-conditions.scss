@@ -52,41 +52,6 @@
 	.text {
 		color: $color-black;
 	}
-}
-
-.booking-conditions-page,
-.stay-safe-on-holiday-page {
-	.condition-section {
-	}
-	.condition {
-		padding: 0 10rem;
-
-		@media only screen and (max-width: $tab-land) {
-			padding: 0;
-		}
-
-		@media only screen and (max-width: $mbl-land) {
-			padding: 0 2rem;
-		}
-
-		h3 {
-			font-weight: 500;
-		}
-
-		p {
-		}
-
-		&__item {
-			.text {
-				font-weight: 500;
-			}
-		}
-
-		&__link {
-			text-decoration: none;
-			color: $color-primary;
-		}
-	}
 
 	.newsletter-section {
 		padding: 5rem 0;
@@ -151,6 +116,41 @@
 					color: $color-secondary;
 				}
 			}
+		}
+	}
+}
+
+.booking-conditions-page,
+.stay-safe-on-holiday-page {
+	.condition-section {
+	}
+	.condition {
+		padding: 0 10rem;
+
+		@media only screen and (max-width: $tab-land) {
+			padding: 0;
+		}
+
+		@media only screen and (max-width: $mbl-land) {
+			padding: 0 2rem;
+		}
+
+		h3 {
+			font-weight: 500;
+		}
+
+		p {
+		}
+
+		&__item {
+			.text {
+				font-weight: 500;
+			}
+		}
+
+		&__link {
+			text-decoration: none;
+			color: $color-primary;
 		}
 	}
 }

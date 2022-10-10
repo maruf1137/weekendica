@@ -2412,6 +2412,58 @@ a:hover {
 .page .text {
   color: #000;
 }
+.page .newsletter-section {
+  padding: 5rem 0;
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 35.9375em) {
+  .page .newsletter {
+    padding: 0 2rem;
+  }
+}
+.page .newsletter__item h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.page .newsletter__item .text {
+  font-weight: 500;
+}
+.page .newsletter__item h3 {
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+.page .newsletter__btn {
+  text-decoration: none;
+  border: 1px solid #fd8a52;
+  background-color: #fd8a52;
+  transition: all 0.3s;
+  width: 100%;
+  display: block;
+  padding: 0.8rem 0;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.page .newsletter__btn .text,
+.page .newsletter__btn i {
+  color: #fff;
+  transition: all 0.3s;
+}
+.page .newsletter__btn i {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.page .newsletter__btn:hover {
+  background-color: transparent;
+}
+.page .newsletter__btn:hover .text,
+.page .newsletter__btn:hover i {
+  color: #fd8a52;
+}
 
 .booking-conditions-page .condition,
 .stay-safe-on-holiday-page .condition {
@@ -2441,70 +2493,6 @@ a:hover {
 .stay-safe-on-holiday-page .condition__link {
   text-decoration: none;
   color: #f95355;
-}
-.booking-conditions-page .newsletter-section,
-.stay-safe-on-holiday-page .newsletter-section {
-  padding: 5rem 0;
-  background-color: #f0f0f0;
-}
-@media only screen and (max-width: 35.9375em) {
-  .booking-conditions-page .newsletter,
-.stay-safe-on-holiday-page .newsletter {
-    padding: 0 2rem;
-  }
-}
-.booking-conditions-page .newsletter__item h2,
-.stay-safe-on-holiday-page .newsletter__item h2 {
-  font-weight: 400;
-  font-size: 3rem;
-}
-.booking-conditions-page .newsletter__item .text,
-.stay-safe-on-holiday-page .newsletter__item .text {
-  font-weight: 500;
-}
-.booking-conditions-page .newsletter__item h3,
-.stay-safe-on-holiday-page .newsletter__item h3 {
-  font-weight: 500;
-  font-size: 2.6rem;
-}
-.booking-conditions-page .newsletter__btn,
-.stay-safe-on-holiday-page .newsletter__btn {
-  text-decoration: none;
-  border: 1px solid #fd8a52;
-  background-color: #fd8a52;
-  transition: all 0.3s;
-  width: 100%;
-  display: block;
-  padding: 0.8rem 0;
-  border-radius: 0.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.booking-conditions-page .newsletter__btn .text,
-.booking-conditions-page .newsletter__btn i,
-.stay-safe-on-holiday-page .newsletter__btn .text,
-.stay-safe-on-holiday-page .newsletter__btn i {
-  color: #fff;
-  transition: all 0.3s;
-}
-.booking-conditions-page .newsletter__btn i,
-.stay-safe-on-holiday-page .newsletter__btn i {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-}
-.booking-conditions-page .newsletter__btn:hover,
-.stay-safe-on-holiday-page .newsletter__btn:hover {
-  background-color: transparent;
-}
-.booking-conditions-page .newsletter__btn:hover .text,
-.booking-conditions-page .newsletter__btn:hover i,
-.stay-safe-on-holiday-page .newsletter__btn:hover .text,
-.stay-safe-on-holiday-page .newsletter__btn:hover i {
-  color: #fd8a52;
 }
 
 .stay-safe-on-holiday-page h3 {
@@ -3452,6 +3440,258 @@ a:hover {
 .page .search p,
 .page .search .text {
   color: #fff !important;
+}
+
+.destinations-page__nav {
+  padding: 1rem 10rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 62em) {
+  .destinations-page__nav {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .destinations-page__nav {
+    padding: 1rem 2rem;
+  }
+}
+.destinations-page__nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.destinations-page .header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/destinations-hero-img.jpg") !important;
+  min-height: 45vh;
+  position: relative;
+}
+.destinations-page .header a,
+.destinations-page .header p,
+.destinations-page .header i {
+  color: #fff;
+}
+.destinations-page .header__nav {
+  padding: 1rem 10rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 62em) {
+  .destinations-page .header__nav {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .destinations-page .header__nav {
+    padding: 1rem 2rem;
+  }
+}
+.destinations-page .header__nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.destinations-page .header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+}
+.destinations-page .header__content h1 {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.destinations-page .header__dielog {
+  gap: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-wrap: wrap;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 10px 50px;
+  border-radius: 0.4rem;
+}
+.destinations-page .text {
+  color: #fff;
+}
+.destinations-page .newsletter-section {
+  padding: 5rem 0;
+  background-color: #f0f0f0;
+}
+@media only screen and (max-width: 35.9375em) {
+  .destinations-page .newsletter {
+    padding: 0 2rem;
+  }
+}
+.destinations-page .newsletter__item h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.destinations-page .newsletter__item .text {
+  font-weight: 500;
+}
+.destinations-page .newsletter__item h3 {
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+.destinations-page .newsletter__btn {
+  text-decoration: none;
+  border: 1px solid #fd8a52;
+  background-color: #fd8a52;
+  transition: all 0.3s;
+  width: 100%;
+  display: block;
+  padding: 0.8rem 0;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.destinations-page .newsletter__btn .text,
+.destinations-page .newsletter__btn i {
+  color: #fff;
+  transition: all 0.3s;
+}
+.destinations-page .newsletter__btn i {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.destinations-page .newsletter__btn:hover {
+  background-color: transparent;
+}
+.destinations-page .newsletter__btn:hover .text,
+.destinations-page .newsletter__btn:hover i {
+  color: #fd8a52;
+}
+.destinations-page .section-introduction {
+  padding: 6rem 0;
+}
+.destinations-page .section-introduction .introduction h3 {
+  color: #000;
+  font-weight: 600;
+}
+.destinations-page .section-introduction .introduction .text {
+  color: #000;
+}
+.destinations-page .section-introduction .introduction .price {
+  font-size: 1.8rem;
+  color: #fd8a52;
+}
+.destinations-page .section-introduction .introduction .btn {
+  border-radius: 0.5rem;
+  border: 2px solid #fd8a52;
+  background-color: #fd8a52;
+  color: #fff;
+}
+.destinations-page .section-introduction .introduction .btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+.destinations-page .reassurance-section {
+  background-color: #d8ebf1;
+  padding: 5rem 0;
+}
+.destinations-page .reassurance-section .reassurance__item {
+  text-align: center;
+}
+.destinations-page .reassurance-section .reassurance__img {
+  height: 7rem;
+  width: 7rem;
+  margin: 0 auto;
+}
+.destinations-page .reassurance-section .reassurance__img img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .reassurance-section .reassurance h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #003865;
+}
+.destinations-page .destinations-section {
+  background-color: #f5f5f5;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.destinations-page .destinations-section .destinations__header h3 {
+  font-weight: 600;
+}
+.destinations-page .destinations-section .destinations__header .btn {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  color: #fd8a52;
+  border: none;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+.destinations-page .destinations-section .destinations__header .btn .text,
+.destinations-page .destinations-section .destinations__header .btn i {
+  transition: all 0.3s;
+}
+.destinations-page .destinations-section .destinations__header .btn:hover {
+  background-color: #fd8a52;
+}
+.destinations-page .destinations-section .destinations__header .btn:hover .text,
+.destinations-page .destinations-section .destinations__header .btn:hover i {
+  color: #fff !important;
+}
+.destinations-page .destinations-section .destinations__item {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+.destinations-page .destinations-section .destinations__img-area {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+}
+.destinations-page .destinations-section .destinations__img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .destinations-section .destinations__img img {
+  height: 100%;
+  width: 100%;
+}
+.destinations-page .destinations-section .destinations__desc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.323), rgba(0, 0, 0, 0.286));
+  height: 100%;
+}
+.destinations-page .destinations-section .destinations .right-arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.destinations-page .destinations-section .destinations__link {
+  background-color: #fff;
+  padding: 2rem;
+  color: #000;
+  text-decoration: none;
+}
+.destinations-page .destinations-section .destinations__link .text {
+  color: #000;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.destinations-page .destinations-section .destinations__link button i {
+  color: #000;
+  transition: all 0.3s;
+}
+.destinations-page .destinations-section .destinations__link:hover .text {
+  color: #fd8a52;
+}
+.destinations-page .destinations-section .destinations__link:hover button i {
+  color: #fd8a52;
 }
 
 /*# sourceMappingURL=style.css.map */
